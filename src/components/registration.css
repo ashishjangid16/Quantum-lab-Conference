@@ -1,0 +1,50 @@
+.registration-container {
+  border: #ced2e3;
+  border-radius: 10px;
+  padding: 18px 20px 20px 20px;
+  margin: 24px auto;
+  background: #dccece;
+  width: 95%;
+  max-width: 500px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.registration-header {
+  display: inline-block;
+  background: #e7c3c3;
+  color: #444;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  padding: 4px 18px;
+  border-radius: 3px;
+  border: 2px solid #bdbdbd;
+  margin-top: -32px;
+  margin-bottom: 12px;
+  position: relative;
+  left: 12px;
+}
+
+.registration-content {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  color: #222;
+  line-height: 1.7;
+}
+
+.registration-link {
+  display: block;
+  margin-bottom: 12px;
+  color: #6c5b7b;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.registration-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.registration-list li {
+  margin-bottom: 6px;
+}

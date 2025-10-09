@@ -1,0 +1,31 @@
+/* Container holding all committee images */
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem; /* space between cards */
+  justify-items: center; /* center each card horizontally */
+  align-items: start;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* Each member container */
+.speaker-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover effect for interactivity */
+.speaker-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.member_image {
+  width: 160px; /* Fixed width for uniformity */
+  height: 160px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 50%; /* Circular images */
+}
