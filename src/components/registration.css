@@ -3,22 +3,22 @@
   border-radius: 10px;
   padding: 18px 20px 20px 20px;
   margin: 24px auto;
-  background: #dccece;
+  background: #bfdce3;
   width: 95%;
   max-width: 500px;
   font-family: 'Public Sans', sans-serif;
 }
 
 .registration-header {
-  display: inline-block;
-  background: #e7c3c3;
+display: inline-block;
+  background: #ded48f;
   color: #444;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 2px;
-  padding: 4px 18px;
-  border-radius: 3px;
-  border: 2px solid #bdbdbd;
+  padding: 8px 36px;           
+  border-radius: 999px;         
+  border: 2px solid #7c7c7c;   
   margin-top: -32px;
   margin-bottom: 12px;
   position: relative;
@@ -27,7 +27,7 @@
 
 .registration-content {
   margin-top: 8px;
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   color: #222;
   line-height: 1.7;
 }

@@ -19,9 +19,6 @@ const Footer = () => (
         <span className="footer-icon">📧</span>
         <span>smst2025@itbhu.ac.in</span>
       </div>
-      <div className="footer-copyright">
-        © <a href="https://icfcm2024.com" target="_blank" rel="noopener noreferrer">INDO_ITALY 2025</a>, All Right Reserved.
-      </div>
     </div>
     <div className="footer-section committees">
       <h2>Committees</h2>
@@ -31,15 +28,9 @@ const Footer = () => (
     </div>
     <div className="footer-section links">
       <h2>Quick Links</h2>
-      <div><a href="#home">Home</a></div>
-      <div><a href="#about-dept">About Department</a></div>
-      <div><a href="#iit-bhu">IIT(BHU)</a></div>
-    </div>
-    <div className="footer-designedby">
-      Designed By&nbsp;
-      <a href="https://www.sagaciousesystems.com/" target="_blank" rel="noopener noreferrer">
-        Sagacious Esystems
-      </a>
+       <div><a href="/">Home</a></div>
+      <div><a href="https://www.iitbhu.ac.in/dept/mst" target="_blank" rel="noopener noreferrer">About Department</a></div>
+      <div><a href="https://iitbhu.ac.in" target="_blank" rel="noopener noreferrer">IIT(BHU) </a></div>
     </div>
     <button className="scroll-top-btn" title="Scroll to top">↑</button>
   </footer>

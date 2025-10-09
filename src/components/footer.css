@@ -97,3 +97,23 @@
     margin-top: 24px;
   }
 }
+.footer-section a {
+  color: #61b4fc;
+  text-decoration: underline;
+  margin-bottom: 8px;
+  display: inline-block;
+  transition: color 0.2s;
+  font-size: 1.08em;
+  word-break: break-word;
+}
+
+.footer-section a:hover {
+  color: #3765a0;
+}
+
+/* Optional: visually distinguish external links */
+.footer-section.links a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.9em;
+  color: #aaa;
+}

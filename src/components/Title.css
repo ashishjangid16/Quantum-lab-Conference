@@ -13,9 +13,29 @@
 background: rgba(239, 243, 243, 0.32);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.1px);
--webkit-backdrop-filter: blur(10.1px);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(15.1px);
 }
+.title-brochure-btn {
+  display: inline-block;
+  padding: 18px 50px;      /* Large left-right padding for ellipse */
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #444;
+  background: #e5e397;
+  border: none;
+  border-radius: 32px / 48px; /* Large elliptical roundness */
+  box-shadow: 0 4px 30px rgba(180, 172, 60, 0.13);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.title-brochure-btn:hover {
+  background: #f0e26d;
+  color: #232529;
+}
+
 
 
 .title-main {

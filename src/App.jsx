@@ -23,7 +23,7 @@ function App() {
       case "committee":
         return <Organisers />;
       case "speaker":
-        return <Speakers />;
+        return <Speakers/>;
       case "accommodation":
         return <div>Accommodation content here</div>;
       case "contact":
@@ -39,25 +39,28 @@ function App() {
             <Textbox />
           </>
         );
-    }
-  };
-
-  return (
-    <div className="App">
+      }
+    };
+    
+    return (
+      <div className="App">
       <div className="top-nav">
+        <button className="nav-link" onClick={() => setActiveSection("home")}>
+          Home
+        </button>
         <button className="nav-link" onClick={() => setActiveSection("theme")}>
           Theme
         </button>
         <button
           className="nav-link"
           onClick={() => setActiveSection("registration")}
-        >
+          >
           Registration
         </button>
         <button
           className="nav-link"
           onClick={() => setActiveSection("committee")}
-        >
+          >
           Committee
         </button>
         <button
@@ -78,12 +81,9 @@ function App() {
         >
           Contact Us
         </button>
-        <button className="nav-link" onClick={() => setActiveSection("home")}>
-          Home
-        </button>
       </div>
       {renderSection()}
-      <Footer />
+          <Footer/>
     </div>
   );
 }
