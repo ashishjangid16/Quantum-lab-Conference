@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import Textbox from "./components/intro";
 import Organisers from "./components/organisers";
 import Registration from "./components/registration";
@@ -10,10 +9,67 @@ import Title from "./components/Title";
 import IIT_BHU from "./assets/IIT-BHU.png";
 import Speakers from "./components/speaker";
 import Footer from "./components/footer";
+import Accommodation from "./components/accommodation";
+import Contact from "./components/Contact"; // ✅ Import the Contact component
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
+  // ✅ Navbar Component
+  const Nav = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleNavClick = (section) => {
+      setActiveSection(section);
+      setMenuOpen(false); // close menu after click
+    };
+
+    return (
+      <>
+       <Logo />
+      <div className={`top-nav ${menuOpen ? "open" : ""}`}>
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <button className="nav-link" onClick={() => handleNavClick("home")}>
+          Home
+        </button>
+        <button className="nav-link" onClick={() => handleNavClick("theme")}>
+          Theme
+        </button>
+        <button
+          className="nav-link"
+          onClick={() => handleNavClick("registration")}
+        >
+          Registration
+        </button>
+        <button
+          className="nav-link"
+          onClick={() => handleNavClick("committee")}
+        >
+          Committee
+        </button>
+        <button className="nav-link" onClick={() => handleNavClick("speaker")}>
+          Speaker
+        </button>
+        <button
+          className="nav-link"
+          onClick={() => handleNavClick("accommodation")}
+        >
+          Accommodation
+        </button>
+        <button className="nav-link" onClick={() => handleNavClick("contact")}>
+          Contact Us
+        </button>
+      </div>
+      </>
+    );
+  };
+
+  // ✅ Section Renderer
   const renderSection = () => {
     switch (activeSection) {
       case "theme":
@@ -23,15 +79,15 @@ function App() {
       case "committee":
         return <Organisers />;
       case "speaker":
-        return <Speakers/>;
+        return <Speakers />;
       case "accommodation":
-        return <div>Accommodation content here</div>;
+        return <Accommodation />;
       case "contact":
-        return <div>Contact Us content here</div>;
+        return <Contact />; // ✅ Replaced placeholder with Contact component
       default:
         return (
           <>
-            <Logo />
+           
             <div className="IIT-BHU-bg">
               <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
             </div>
@@ -39,51 +95,16 @@ function App() {
             <Textbox />
           </>
         );
-      }
-    };
-    
-    return (
-      <div className="App">
-      <div className="top-nav">
-        <button className="nav-link" onClick={() => setActiveSection("home")}>
-          Home
-        </button>
-        <button className="nav-link" onClick={() => setActiveSection("theme")}>
-          Theme
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => setActiveSection("registration")}
-          >
-          Registration
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => setActiveSection("committee")}
-          >
-          Committee
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => setActiveSection("speaker")}
-        >
-          Speaker
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => setActiveSection("accommodation")}
-        >
-          Accommodation
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => setActiveSection("contact")}
-        >
-          Contact Us
-        </button>
-      </div>
+    }
+  };
+
+  return (
+    <div className="App">
+      <Nav />
+      <div className="content-container">
       {renderSection()}
-          <Footer/>
+      <Footer />
+      </div>
     </div>
   );
 }

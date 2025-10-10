@@ -18,7 +18,7 @@ const TextComponent = () => (
       <h2 className="intro-header">About the Department</h2>
       <div className="intro-row">
         <img src={smstImage} alt="SMST Department" className="intro-img" />
-        <div className="intro-text right-align">
+        <div className="intro-text left-align">
           School offers a two year M.Tech. degree programme with an annual intake of 16 students and has produced over 130 M.Techs. so far. These students are generally employed in premier R & D organizations, industry and teaching institutions. From the session 2005-06, the school has initiated a new 5 year Dual degree M.Tech. Programme. School runs a very successful Ph.D. degree programme also. Nearly twenty five Ph.D candidates have completed work under the supervision of the faculty members of the School.
         </div>
       </div>

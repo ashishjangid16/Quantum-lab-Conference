@@ -17,14 +17,14 @@ export default function Title() {
         <span className="title-contact-person">Dr. Shrawan Mishra (shrawan.mst@iitbhu.ac.in)</span><br />
         <span className="title-contact-phone">+91-9129113336</span>
       </div>
-      <a
-        className="title-brochure-btn"
-        href="/brochure.pdf"  // update the href to your actual brochure file path or URL
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Download Conference Brochure
-      </a>
+     <a
+  className="title-brochure-btn"
+  href="/Soft Yellow And Pink Illustrative Business Event Rundown Flyer.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Download Conference Brochure
+</a>
     </div>
   );
 }

@@ -1,12 +1,16 @@
 import React from "react";
 import "./registration.css";
 import qrcode from "../assets/qrcode.png";
-
+import IIT_BHU from "../assets/IIT-BHU.png";
 
 
 const Registration = () => {
   return (
     <div className="registration-container">
+
+      <div className="IIT-BHU-bg">
+                          <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
+                        </div>
       <div className="registration-header">REGISTRATION</div>
       <div className="registration-content">
         <a

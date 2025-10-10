@@ -3,12 +3,17 @@
   border-radius: 10px;
   padding: 18px 20px 20px 20px;
   margin: 24px auto;
-  background: #bfdce3;
+  background: #bfdce3d0;
   width: 95%;
   max-width: 500px;
   font-family: 'Public Sans', sans-serif;
+  
 }
 
+.registration-container a{
+  text-decoration: none;
+  color: #000000;
+}
 .registration-header {
 display: inline-block;
   background: #ded48f;
@@ -30,6 +35,10 @@ display: inline-block;
   font-size: 1.3rem;
   color: #222;
   line-height: 1.7;
+  border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(15.1px);
 }
 
 .registration-link {
@@ -47,4 +56,6 @@ display: inline-block;
 
 .registration-list li {
   margin-bottom: 6px;
+list-style-type: none;
+padding-bottom: 12px;
 }

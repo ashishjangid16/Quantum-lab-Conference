@@ -1,11 +1,10 @@
-
-
 .logo-container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
   z-index: 100;
+  background: rgba(239, 243, 243, 0.32);
 }
 
 .logo-left {
@@ -26,4 +25,13 @@
   object-fit: contain;
   margin: 0;
   padding: 0;
+}
+
+/* Responsive for screens <= 900px */
+@media (max-width: 900px) {
+  .logo-left, .logo-right
+  {
+    position: absolute;
+    top: 70px;
+  }
 }

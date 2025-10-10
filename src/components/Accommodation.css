@@ -1,0 +1,92 @@
+.accommodation-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background-color: #bfdce3d1;
+}
+
+.accommodation-title {
+ display: inline-block;
+  background: #ded48f;
+  color: #444;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  padding: 8px 36px;           
+  border-radius: 999px;         
+  border: 2px solid #7c7c7c;   
+  margin-top: -32px;
+  margin-bottom: 12px;
+  position: relative;
+  left: 12px;
+}
+
+.accommodation-card {
+  background-color:#bfdce3b4;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  backdrop-filter: blur(6px);
+}
+
+.accommodation-card h2 {
+  font-size: 1.6rem;
+  color: #003566;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.details {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.accommodation-card h3 {
+  font-size: 1.2rem;
+  color: #0077b6;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.accommodation-card ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.accommodation-card ul li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+.accommodation-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .accommodation-container {
+    padding: 20px;
+  }
+
+  .accommodation-card {
+    padding: 20px;
+  }
+
+  .accommodation-title {
+    font-size: 1.8rem;
+  }
+
+  .accommodation-card h2 {
+    font-size: 1.4rem;
+  }
+}
