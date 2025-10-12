@@ -1,9 +1,8 @@
 import React from "react";
 import "./speaker.css";
 import ImageDisplay from "./speaker_image";
-import IIT_BHU from "../assets/IIT-BHU.png";
-const speakers = 
-[
+
+const speakers = [
   {
     name: "Prof. Alessandro Magni",
     imageSrc: require("../assets/speaker/speaker 1.png"),
@@ -18,21 +17,24 @@ const speakers =
   },
 ];
 
-
 export default function Speakers() {
   return (
-    <div className="speakers-container">
-        <div className="IIT-BHU-bg">
-                            <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
-                          </div>
-      <h1 className="speakers-header"> SPEAKERS </h1>
-      <div className="speaker-grid">
-        {speakers.map((member, index) => (
-          <div key={index} className="speaker-member">
-            <ImageDisplay imageObj={member} />
-          </div>
-        ))}
+    <section className="speakers-container">
+      <div className="speakers-hero">
+        <div className="speakers-header">SPEAKERS</div>
       </div>
-    </div>
+      
+      <div className="speakers-content">
+        <div className="speakers-card">
+          <div className="speaker-grid">
+            {speakers.map((member, index) => (
+              <div key={index} className="speaker-member">
+                <ImageDisplay imageObj={member} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

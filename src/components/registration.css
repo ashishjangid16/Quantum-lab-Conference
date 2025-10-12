@@ -1,44 +1,61 @@
 .registration-container {
-  border: #ced2e3;
-  border-radius: 10px;
-  padding: 18px 20px 20px 20px;
-  margin: 24px auto;
-  background: #bfdce3d0;
-  width: 95%;
-  max-width: 500px;
-  font-family: 'Public Sans', sans-serif;
-  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #222;
 }
 
-.registration-container a{
-  text-decoration: none;
-  color: #000000;
+.registration-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
 }
+
 .registration-header {
-display: inline-block;
-  background: #ded48f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(239, 243, 243, 0.32);
   color: #444;
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-  padding: 8px 36px;           
-  border-radius: 999px;         
-  border: 2px solid #7c7c7c;   
-  margin-top: -32px;
-  margin-bottom: 12px;
-  position: relative;
-  left: 12px;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  padding: 20px 60px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(15.1px);
+  z-index: 2;
+  text-align: center;
 }
 
 .registration-content {
-  margin-top: 8px;
+  background: #d5e0e2;
+  padding: 40px 60px;
+  margin: 0;
   font-size: 1.3rem;
   color: #222;
   line-height: 1.7;
+  text-align: left;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.1px);
--webkit-backdrop-filter: blur(15.1px);
+  margin: 20px;
+}
+
+.registration-card {
+  background-color: #bfdce3b4;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  backdrop-filter: blur(6px);
+}
+
+.registration-container a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .registration-link {
@@ -50,12 +67,30 @@ backdrop-filter: blur(5.1px);
 }
 
 .registration-list {
-  padding-left: 18px;
-  margin: 0;
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
 }
 
 .registration-list li {
-  margin-bottom: 6px;
-list-style-type: none;
-padding-bottom: 12px;
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .registration-header {
+    font-size: 2rem;
+    padding: 15px 40px;
+    letter-spacing: 2px;
+  }
+  
+  .registration-content {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+
+  .registration-card {
+    padding: 20px;
+  }
 }

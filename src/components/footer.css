@@ -1,5 +1,5 @@
 .footer {
-    background: #232529;
+  background: #232529;
   color: #c5c7c9;
   display: flex;
   justify-content: space-between;
@@ -9,10 +9,12 @@
   font-family: 'Public Sans', sans-serif;
   flex-wrap: wrap;
 }
+
 .footer a {
   color: #89b5ff;
   text-decoration: none !important;
 }
+
 .footer-section {
   flex: 1 1 270px;
   margin-right: 32px;
@@ -29,6 +31,11 @@
   align-items: center;
   margin-bottom: 10px;
   font-size: 1.1rem;
+}
+
+/* Add this new rule to make address section text white */
+.footer-section.address .footer-item span {
+  color: #fff;
 }
 
 .footer-icon {
@@ -80,6 +87,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.scroll-top-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: visually distinguish external links */
+.footer-section.links a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.9em;
+  color: #aaa;
 }
 
 @media (max-width: 900px) {
@@ -96,24 +115,4 @@
     text-align: right;
     margin-top: 24px;
   }
-}
-.footer-section a {
-  color: #61b4fc;
-  text-decoration: underline;
-  margin-bottom: 8px;
-  display: inline-block;
-  transition: color 0.2s;
-  font-size: 1.08em;
-  word-break: break-word;
-}
-
-.footer-section a:hover {
-  color: #3765a0;
-}
-
-/* Optional: visually distinguish external links */
-.footer-section.links a[target="_blank"]::after {
-  content: " ↗";
-  font-size: 0.9em;
-  color: #aaa;
 }

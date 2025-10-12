@@ -7,10 +7,11 @@ import Logo from "./components/Logo";
 import "./App.css";
 import Title from "./components/Title";
 import IIT_BHU from "./assets/IIT-BHU.png";
+import IIT_BHU_2 from "./assets/IIT-BHU 2.jpg";
 import Speakers from "./components/speaker";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
-import Contact from "./components/Contact"; // ✅ Import the Contact component
+import Contact from "./components/Contact";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -73,21 +74,62 @@ function App() {
   const renderSection = () => {
     switch (activeSection) {
       case "theme":
-        return <Theme />;
+        return (
+          <>
+            <div className="IIT-BHU-bg">
+              <img src={IIT_BHU_2} alt="IIT-BHU" className="IIT-BHU-img" />
+            </div>
+            <Theme />
+          </>
+        );
       case "registration":
-        return <Registration />;
+        return (
+          <>
+            <div className="IIT-BHU-bg">
+              <img src={IIT_BHU_2} alt="IIT-BHU" className="IIT-BHU-img" />
+            </div>
+            <Registration />
+          </>
+        );
       case "committee":
-        return <Organisers />;
+        return (
+          <>
+            <div className="IIT-BHU-bg">
+              <img src={IIT_BHU_2} alt="IIT-BHU" className="IIT-BHU-img" />
+            </div>
+            <Organisers />
+          </>
+        );
       case "speaker":
-        return <Speakers />;
+        return (
+          <>
+            <div className="IIT-BHU-bg">
+              <img src={IIT_BHU_2} alt="IIT-BHU" className="IIT-BHU-img" />
+            </div>
+            <Speakers />
+          </>
+        );
       case "accommodation":
-        return <Accommodation />;
+        return (
+          <>
+            <div className="IIT-BHU-bg">
+              <img src={IIT_BHU_2} alt="IIT-BHU" className="IIT-BHU-img" />
+            </div>
+            <Accommodation />
+          </>
+        );
       case "contact":
-        return <Contact />; // ✅ Replaced placeholder with Contact component
+        return (
+          <>
+            <div className="IIT-BHU-bg">
+              <img src={IIT_BHU_2} alt="IIT-BHU" className="IIT-BHU-img" />
+            </div>
+            <Contact />
+          </>
+        );
       default:
         return (
           <>
-           
             <div className="IIT-BHU-bg">
               <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
             </div>

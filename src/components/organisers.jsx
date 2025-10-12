@@ -1,7 +1,7 @@
 import React from "react";
 import "./organisers.css";
 import ImageDisplay from "./committee_image";
-import IIT_BHU from "../assets/IIT-BHU.png";
+
 const committeeMembers = [
   {
     name: "Prof. Rajiv Prakash",
@@ -67,18 +67,22 @@ const committeeMembers = [
 
 export default function Organisers() {
   return (
-    <div className="organisers-container">
-      <div className="IIT-BHU-bg">
-                          <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
-                        </div>
-      <div className="organisers-header">ORGANIZERS</div>
-      <div className="committee-grid">
-        {committeeMembers.map((member, index) => (
-          <div key={index} className="committee-member">
-            <ImageDisplay imageObj={member} />
-          </div>
-        ))}
+    <section className="organisers-container">
+      <div className="organisers-hero">
+        <div className="organisers-header">ORGANIZERS</div>
       </div>
-    </div>
+      
+      <div className="organisers-content">
+        <div className="organisers-card">
+          <div className="committee-grid">
+            {committeeMembers.map((member, index) => (
+              <div key={index} className="committee-member">
+                <ImageDisplay imageObj={member} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
