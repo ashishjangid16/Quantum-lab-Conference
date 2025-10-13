@@ -53,6 +53,8 @@ const Registration = () => {
       
       <div className="registration-content">
         <div className="registration-card">
+           <div className="registration-subheader"><strong>Registration Form:</strong></div>
+
           <a
             className="registration-link"
             href="https://forms.gle/bdx3nxQ8WaiSqW6VA"

@@ -65,13 +65,18 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+  justify-items: center; /* center each card horizontally */
+  align-items: start;
 }
 
 .committee-member img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
+  width: 180px; /* fixed square size for perfect circle */
+  height: 180px;
+  object-fit: cover; /* ensures image fills circle without distortion */
+  border-radius: 50%; /* circular appearance */
+  border: 3px solid #0077b6; /* optional border for style */
 }
+
 
 /* Responsive Design */
 
