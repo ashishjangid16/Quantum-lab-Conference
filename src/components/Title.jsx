@@ -1,4 +1,5 @@
 import "./Title.css";
+import brochurePdf from "../assets/Nov_Conference Brochure.pdf";
 
 export default function Title() {
   return (
@@ -17,14 +18,14 @@ export default function Title() {
         <span className="title-contact-person">Dr. Shrawan Mishra (shrawan.mst@iitbhu.ac.in)</span><br />
         <span className="title-contact-phone">+91-9129113336</span>
       </div>
-     <a
-  className="title-brochure-btn"
-  href="/Soft Yellow And Pink Illustrative Business Event Rundown Flyer.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Download Conference Brochure
-</a>
+      <a
+        className="title-brochure-btn"
+        href={brochurePdf}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download Conference Brochure
+      </a>
     </div>
   );
 }

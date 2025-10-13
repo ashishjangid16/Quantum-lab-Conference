@@ -15,17 +15,20 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* helps center any text below image */
+}
+
+.member_image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; /* centers the image horizontally */
 }
 
 /* Subtle hover effect for interactivity */
 .committee-member:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.member_image {
-  width: 160px; /* Fixed width for uniformity */
-  height: 160px; /* Fixed height for uniformity */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
-  border-radius: 50%; /* Circular images */
 }

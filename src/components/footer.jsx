@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-item">
           <span className="footer-icon">📍</span>
           <span>
-            SCHOOL OF MATERIAL SCIENCE AND TECHNOLOGY , IIT(BHU) Varanasi
+            SCHOOL OF MATERIAL SCIENCE AND TECHNOLOGY , IIT(BHU) Varanasi ( 221005 )
           </span>
         </div>
         <div className="footer-item">
@@ -26,15 +26,10 @@ const Footer = () => {
         </div>
         <div className="footer-item">
           <span className="footer-icon">📧</span>
-          <span>smst2025@itbhu.ac.in</span>
+          <span>jii2025.events@itbhu.ac.in</span>
         </div>
       </div>
-      <div className="footer-section committees">
-        <h2>Committees</h2>
-        <div><a href="#advisory">Advisory Committee</a></div>
-        <div><a href="#organizing">Organizing Committee</a></div>
-        <div><a href="#other">Other Committee</a></div>
-      </div>
+
       <div className="footer-section links">
         <h2>Quick Links</h2>
          <div><a href="/">Home</a></div>

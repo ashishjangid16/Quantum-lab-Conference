@@ -25,12 +25,7 @@ const Contact = () => {
             <strong>Phone:</strong> +91-9129113336
           </p>
 
-          <h3>Additional Details:</h3>
-          <ul>
-            <li>Office Hours: 9:00 AM – 5:30 PM (Monday to Friday)</li>
-            <li>Address: IIT BHU Main Campus, Lanka, Varanasi, Uttar Pradesh – 221005</li>
-            <li>Conference Help Desk will be active during event days at the venue.</li>
-          </ul>
+       
 
           <p className="thanks">We look forward to hearing from you!</p>
         </div>

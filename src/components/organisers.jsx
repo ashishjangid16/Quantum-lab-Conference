@@ -32,7 +32,7 @@ const committeeMembers = [
     imageSrc: require("../assets/committee/Prof_Ashish_Kumar_Mishra.jpg"),
   },
   {
-    name: "Prof. Shrawan Kumar Mishra (Convenor)",
+    name: "Prof. Shrawan Kumar Mishra",
     imageSrc: require("../assets/committee/Prof_Shrawan_Kumar_Mishra.jpg"),
   },
   {
@@ -60,7 +60,7 @@ const committeeMembers = [
     imageSrc: require("../assets/committee/Prof_Sandip_Chatterji.jpg"),
   },
   {
-    name: "Prof. Gautam Anand (Treasurer/Secretary)",
+    name: "Prof. Gautam Anand",
     imageSrc: require("../assets/committee/Prof_Gautam_Anand.jpg"),
   },
 ];
@@ -69,17 +69,81 @@ export default function Organisers() {
   return (
     <section className="organisers-container">
       <div className="organisers-hero">
-        <div className="organisers-header">ORGANIZERS</div>
+        <div className="organisers-header">COMMITTEE</div>
       </div>
-      
+
       <div className="organisers-content">
         <div className="organisers-card">
-          <div className="committee-grid">
-            {committeeMembers.map((member, index) => (
-              <div key={index} className="committee-member">
-                <ImageDisplay imageObj={member} />
+          {(() => {
+            const patron = {
+              name: "Dr. Amit Patra (Director, IIT BHU)",
+              imageSrc: require("../assets/committee/IIT BHU DIRECTOR.jpg"),
+            };
+            return (
+              <div className="committee-grid">
+                <div
+                  className="committee-member"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <h2 style={{ textDecoration: "underline" }}>Patron</h2>
+                  <ImageDisplay imageObj={patron} />
+                </div>
               </div>
-            ))}
+            );
+          })()}
+
+          {(() => {
+            const convenor = committeeMembers.find((m) =>
+              m.name.toLowerCase().includes("shrawan kumar mishra")
+            );
+            const treasurer = committeeMembers.find((m) =>
+              m.name.toLowerCase().includes("gautam anand")
+            );
+
+            return (
+              <div className="committee-grid">
+                {convenor && (
+                  <div
+                    className="committee-member"
+                    style={{ display: "flex", flexDirection: "column" }}
+                  >
+                    <h2 style={{ textDecoration: "underline" }}>Convenor</h2>
+                    <ImageDisplay imageObj={convenor} />
+                  </div>
+                )}
+                {treasurer && (
+                  <div
+                    className="committee-member"
+                    style={{ display: "flex", flexDirection: "column" }}
+                  >
+                    <h2 style={{ textDecoration: "underline" }}>Treasurer</h2>
+                    <ImageDisplay imageObj={treasurer} />
+                  </div>
+                )}
+              </div>
+            );
+          })()}
+
+          {/* Header: Organising Committee */}
+          <div className="organisers-subheader" style={{display:"flex",justifyContent:"center"}}>
+            <h2 style={{ textDecoration: "underline" }}>ORGANISING COMMITTEE</h2>
+          </div>
+
+          {/* Remaining members */}
+          <div className="committee-grid">
+            {committeeMembers
+              .filter((m) => {
+                const n = m.name.toLowerCase();
+                return !(
+                  n.includes("shrawan kumar mishra") ||
+                  n.includes("gautam anand")
+                );
+              })
+              .map((member, index) => (
+                <div key={index} className="committee-member">
+                  <ImageDisplay imageObj={member} />
+                </div>
+              ))}
           </div>
         </div>
       </div>

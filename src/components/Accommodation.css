@@ -55,18 +55,18 @@
 
 .accommodation-card h2 {
   font-size: 1.6rem;
-  color: #003566;
+  color:#0077b6;
   margin-bottom: 10px;
 }
 
 .address {
-  font-size: 1rem;
+  font-size:1.2rem;
   color: #444;
   margin-bottom: 15px;
 }
 
 .details {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 25px;
 }

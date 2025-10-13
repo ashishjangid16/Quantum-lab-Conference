@@ -16,7 +16,7 @@ import Contact from "./components/Contact";
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
-  // ✅ Navbar Component
+
   const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 

@@ -4,15 +4,15 @@ import ImageDisplay from "./speaker_image";
 
 const speakers = [
   {
-    name: "Prof. Alessandro Magni",
+    name: "Dr. Alessandro Magni",
     imageSrc: require("../assets/speaker/speaker 1.png"),
   },
   {
-    name: "Prof. Michaela Kuepferling",
+    name: "Dr. Michaela Kuepferling",
     imageSrc: require("../assets/speaker/speaker 2.png"),
   },
   {
-    name: "Prof. Vittorio Basso",
+    name: "Dr. Vittorio Basso",
     imageSrc: require("../assets/speaker/speaker 3.png"),
   },
 ];

@@ -2,6 +2,48 @@ import React from "react";
 import "./registration.css";
 import qrcode from "../assets/qrcode.png";
 
+const BankDetails = () => {
+  return (
+    <div className="registration-card">
+      <div className="registration-subheader"><strong>Bank Details :</strong></div>
+      <table className="bank-details-table">
+        <tbody>
+          <tr>
+            <td><strong> Name of Account</strong></td>
+            <td>IIT(BHU)-Main Account (Institute Development Fund)</td>
+          </tr>
+          <tr>
+            <td><strong> Account No.</strong></td>
+            <td>32778803937</td>
+          </tr>
+          <tr>
+            <td><strong> Account Type</strong></td>
+            <td>Current Account</td>
+          </tr>
+          <tr>
+            <td><strong> Account Holder Name</strong></td>
+            <td>The Registrar, IIT(BHU)</td>
+          </tr>
+          <tr>
+            <td><strong> Name of Bank & Add.</strong></td>
+            <td>
+              State Bank of India, IT-BHU Branch (Branch Code- 11445)
+              <br />
+              IIT(BHU), Campus, Varanasi-221 005
+              <br />
+              Ph. No.: 0542-2369181
+            </td>
+          </tr>
+          <tr>
+            <td><strong> IFSC Code</strong></td>
+            <td>SBIN0011445</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
 const Registration = () => {
   return (
     <section className="registration-container">
@@ -25,14 +67,16 @@ const Registration = () => {
             <li>Selections are based on research relevance</li>
             <li>Shortlisted candidates will be notified by 12/11/2025</li>
             <li>Selected participants must pay the fee by 10/11/2025</li>
-            <li>Seats are limited to 75 participants</li>
-            <li>Workshop fees:</li>
-            <li>₹2000 (for early-career researchers)</li>
-            <li>₹1500 (for PhD scholars)</li>
-            <li>₹1000 (for Master's students)</li>
-            <li>Accommodation will be provided on a payment basis (booking deadlines 30/10/2025)</li>
+            <li>Seats are limited (only 75 participants)</li>
+            <b>Workshop fees:</b>
+            <li>₹3500 (early-career researchers/faculty)</li>
+            <li>₹1500 (PhD scholars)</li>
+            <li>₹1000 (Master's students)</li>
           </ul>
         </div>
+
+        {/* Bank details component */}
+        <BankDetails />
       </div>
     </section>
   );
