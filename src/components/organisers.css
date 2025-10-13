@@ -9,7 +9,7 @@
 .organisers-hero {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   overflow: hidden;
 }
 
@@ -76,4 +76,8 @@
 
   /* Smaller fonts for mobile */
   .organisers-content { font-size: 1.05rem; line-height: 1.6; }
+
+  /* Grid: one column on mobile */
+  .committee-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .committee-member img { max-width: 100%; height: auto; }
 }

@@ -9,23 +9,23 @@ const BankDetails = () => {
       <table className="bank-details-table">
         <tbody>
           <tr>
-            <td><strong> Name of Account</strong></td>
+            <td><strong> Name of Account :</strong></td>
             <td>IIT(BHU)-Main Account (Institute Development Fund)</td>
           </tr>
           <tr>
-            <td><strong> Account No.</strong></td>
+            <td><strong> Account Number :</strong></td>
             <td>32778803937</td>
           </tr>
           <tr>
-            <td><strong> Account Type</strong></td>
+            <td><strong> Account Type :</strong></td>
             <td>Current Account</td>
           </tr>
           <tr>
-            <td><strong> Account Holder Name</strong></td>
+            <td><strong> Account Holder Name :</strong></td>
             <td>The Registrar, IIT(BHU)</td>
           </tr>
           <tr>
-            <td><strong> Name of Bank & Add.</strong></td>
+            <td><strong> Name of Bank & Address :</strong></td>
             <td>
               State Bank of India, IT-BHU Branch (Branch Code- 11445)
               <br />
@@ -35,7 +35,7 @@ const BankDetails = () => {
             </td>
           </tr>
           <tr>
-            <td><strong> IFSC Code</strong></td>
+            <td><strong> IFSC Code :</strong></td>
             <td>SBIN0011445</td>
           </tr>
         </tbody>

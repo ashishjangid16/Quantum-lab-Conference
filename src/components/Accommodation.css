@@ -94,6 +94,30 @@
   line-height: 1.6;
 }
 
+.bank-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.bank-details-table td { 
+  padding: 12px 16px; 
+  vertical-align: top; 
+  border-bottom: 1px solid #e0e0e0;
+}
+.bank-details-table tr:nth-child(even) {
+  background-color: #bfdce3b4;
+}
+.bank-details-table tr:nth-child(odd) {
+  background-color: #d5e0e2;
+}
+.bank-details-table tr:last-child td {
+  border-bottom: none;
+}
+.bank-details-wrapper { width: 100%; overflow-x: auto; }
+
 /* Responsive */
 @media (max-width: 768px) {
   .accommodation-header {
@@ -121,4 +145,7 @@
   .details { font-size: 1rem; }
   .accommodation-card h3 { font-size: 1.05rem; }
   .accommodation-card p { font-size: 0.95rem; }
+
+  /* Make tables responsive and allow scroll */
+  .bank-details-wrapper { -webkit-overflow-scrolling: touch; }
 }

@@ -65,31 +65,31 @@ const Accommodation = () => {
             <tbody>
               <tr>
                 <td>
-                  <strong>Name of Account</strong>
+                  <strong>Name of Account :</strong>
                 </td>
                 <td>IIT(BHU)-Main Account (Institute Development Fund)</td>
               </tr>
               <tr>
                 <td>
-                  <strong>Account No.</strong>
+                  <strong>Account Number :</strong>
                 </td>
                 <td>32778803937</td>
               </tr>
               <tr>
                 <td>
-                  <strong>Account Type</strong>
+                  <strong>Account Type :</strong>
                 </td>
                 <td>Current Account</td>
               </tr>
               <tr>
                 <td>
-                  <strong>Account Holder Name</strong>
+                  <strong>Account Holder Name :</strong>
                 </td>
                 <td>The Registrar, IIT(BHU)</td>
               </tr>
               <tr>
                 <td>
-                  <strong>Name of Bank & Address</strong>
+                  <strong>Name of Bank & Address :</strong>
                 </td>
                 <td>
                   State Bank of India, IT-BHU Branch (Branch Code - 11445)
@@ -101,7 +101,7 @@ const Accommodation = () => {
               </tr>
               <tr>
                 <td>
-                  <strong>IFSC Code</strong>
+                  <strong>IFSC Code :</strong>
                 </td>
                 <td>SBIN0011445</td>
               </tr>
