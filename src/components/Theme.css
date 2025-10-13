@@ -6,6 +6,7 @@
   color: #222;
 }
 
+/* Hero Section */
 .theme-hero {
   position: relative;
   width: 100%;
@@ -13,17 +14,18 @@
   overflow: hidden;
 }
 
+/* Header */
 .theme-header {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(239, 243, 243, 0.32);
-  color: #444;
+  color: #000; /* Updated to black for better contrast */
   font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 4px;
-  padding: 20px 60px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem); /* Responsive scaling */
+  letter-spacing: 3px;
+  padding: 16px 44px;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.1px);
@@ -32,25 +34,32 @@
   text-align: center;
 }
 
+/* Content Section */
 .theme-content {
   background: #d5e0e2;
   padding: 40px 60px;
-  margin: 0;
-  font-size: 1.3rem;
+  margin: 20px;
+  font-size: 1.2rem;
   color: #222;
   line-height: 1.7;
   text-align: left;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-  margin: 20px;
 }
 
+/* Cards */
 .theme-card {
   background-color: #bfdce3b4;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   padding: 30px;
   backdrop-filter: blur(6px);
+}
+
+.theme-card h2 {
+  font-size: 1.6rem;
+  color: #0077b6;
+  margin-bottom: 10px;
 }
 
 .theme-list {
@@ -64,20 +73,82 @@
   line-height: 1.5;
 }
 
-/* Responsive */
+/* Responsive Design */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .theme-content {
+    padding: 30px 40px;
+    font-size: 1.1rem;
+  }
+
+  .theme-card {
+    padding: 25px;
+  }
+
+  .theme-card h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Tablets / Large Phones (≤768px) */
 @media (max-width: 768px) {
   .theme-header {
-    font-size: 2rem;
-    padding: 15px 40px;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    padding: 12px 36px;
     letter-spacing: 2px;
   }
-  
+
   .theme-content {
-    padding: 30px 20px;
-    margin: 10px;
+    padding: 25px 20px;
+    margin: 12px;
+    font-size: 1.05rem;
   }
 
   .theme-card {
     padding: 20px;
+  }
+
+  .theme-card h2,
+  .theme-list li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .theme-header {
+    width: 90%;
+    padding: 10px 20px;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    letter-spacing: 1px;
+  }
+
+  .theme-content {
+    padding: 20px 15px;
+    margin: 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .theme-card {
+    padding: 15px;
+  }
+
+  .theme-card h2,
+  .theme-list li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices (≤360px) */
+@media (max-width: 360px) {
+  .theme-header {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  .theme-content {
+    font-size: 0.9rem;
   }
 }

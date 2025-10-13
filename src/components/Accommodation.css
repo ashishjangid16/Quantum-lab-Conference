@@ -6,6 +6,7 @@
   color: #222;
 }
 
+/* Hero Section */
 .accommodation-hero {
   position: relative;
   width: 100%;
@@ -13,17 +14,18 @@
   overflow: hidden;
 }
 
+/* Header */
 .accommodation-header {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(239, 243, 243, 0.32);
-  color: #444;
+  color: #000; /* Changed to black */
   font-weight: 700;
-  font-size: 3rem;
-  letter-spacing: 4px;
-  padding: 20px 60px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem); /* Reduced & responsive */
+  letter-spacing: 3px;
+  padding: 16px 44px;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.1px);
@@ -32,19 +34,20 @@
   text-align: center;
 }
 
+/* Content Section */
 .accommodation-content {
   background: #d5e0e2;
   padding: 40px 60px;
-  margin: 0;
-  font-size: 1.3rem;
+  margin: 20px;
+  font-size: 1.2rem;
   color: #222;
   line-height: 1.7;
   text-align: left;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   border-radius: 16px;
-  margin: 20px;
 }
 
+/* Cards */
 .accommodation-card {
   background-color: #bfdce3b4;
   border-radius: 16px;
@@ -55,12 +58,12 @@
 
 .accommodation-card h2 {
   font-size: 1.6rem;
-  color:#0077b6;
+  color: #0077b6;
   margin-bottom: 10px;
 }
 
 .address {
-  font-size:1.2rem;
+  font-size: 1.2rem;
   color: #444;
   margin-bottom: 15px;
 }
@@ -94,6 +97,13 @@
   line-height: 1.6;
 }
 
+/* Bank Table */
+.bank-details-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .bank-details-table {
   width: 100%;
   border-collapse: collapse;
@@ -102,33 +112,57 @@
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.bank-details-table td { 
-  padding: 12px 16px; 
-  vertical-align: top; 
+
+.bank-details-table td {
+  padding: 12px 16px;
+  vertical-align: top;
   border-bottom: 1px solid #e0e0e0;
 }
+
 .bank-details-table tr:nth-child(even) {
   background-color: #bfdce3b4;
 }
+
 .bank-details-table tr:nth-child(odd) {
   background-color: #d5e0e2;
 }
+
 .bank-details-table tr:last-child td {
   border-bottom: none;
 }
-.bank-details-wrapper { width: 100%; overflow-x: auto; }
 
-/* Responsive */
+/* ------------------------------ */
+/* 🌐 Responsive Design Section */
+/* ------------------------------ */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .accommodation-content {
+    padding: 30px 40px;
+    font-size: 1.1rem;
+  }
+
+  .accommodation-card {
+    padding: 25px;
+  }
+
+  .accommodation-card h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Tablets / Large Phones (≤768px) */
 @media (max-width: 768px) {
   .accommodation-header {
-    font-size: 2.6rem; /* keep header prominent on mobile */
-    padding: 16px 44px;
-    letter-spacing: 3px;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    padding: 12px 36px;
+    letter-spacing: 2px;
   }
-  
+
   .accommodation-content {
-    padding: 30px 20px;
-    margin: 10px;
+    padding: 25px 20px;
+    margin: 12px;
+    font-size: 1.05rem;
   }
 
   .accommodation-card {
@@ -136,16 +170,62 @@
   }
 
   .accommodation-card h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
-  /* Smaller fonts for mobile */
-  .accommodation-content { font-size: 1.05rem; line-height: 1.6; }
-  .address { font-size: 1rem; }
-  .details { font-size: 1rem; }
-  .accommodation-card h3 { font-size: 1.05rem; }
-  .accommodation-card p { font-size: 0.95rem; }
+  .address,
+  .details,
+  .accommodation-card h3,
+  .accommodation-card p {
+    font-size: 0.95rem;
+  }
+}
 
-  /* Make tables responsive and allow scroll */
-  .bank-details-wrapper { -webkit-overflow-scrolling: touch; }
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .accommodation-header {
+    width: 90%;
+    padding: 10px 20px;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    letter-spacing: 1px;
+  }
+
+  .accommodation-content {
+    padding: 20px 15px;
+    margin: 8px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .accommodation-card {
+    padding: 15px;
+  }
+
+  .accommodation-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .address,
+  .details,
+  .accommodation-card h3,
+  .accommodation-card p {
+    font-size: 0.9rem;
+  }
+
+  .bank-details-table td {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices (≤360px) */
+@media (max-width: 360px) {
+  .accommodation-header {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  .accommodation-content {
+    font-size: 0.9rem;
+  }
 }
