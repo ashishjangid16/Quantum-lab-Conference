@@ -80,9 +80,9 @@
 /* Responsive */
 @media (max-width: 768px) {
   .registration-header {
-    font-size: 2rem;
-    padding: 15px 40px;
-    letter-spacing: 2px;
+    font-size: 2.6rem; /* keep header prominent on mobile */
+    padding: 16px 44px;
+    letter-spacing: 3px;
   }
   
   .registration-content {
@@ -93,4 +93,9 @@
   .registration-card {
     padding: 20px;
   }
+
+  /* Smaller fonts for mobile */
+  .registration-content { font-size: 1.05rem; line-height: 1.6; }
+  .registration-link { font-size: 0.95rem; }
+  .registration-list li { font-size: 0.95rem; }
 }

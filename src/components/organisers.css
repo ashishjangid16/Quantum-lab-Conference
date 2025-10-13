@@ -60,9 +60,9 @@
 /* Responsive */
 @media (max-width: 768px) {
   .organisers-header {
-    font-size: 2rem;
-    padding: 15px 40px;
-    letter-spacing: 2px;
+    font-size: 2.6rem; /* keep header prominent on mobile */
+    padding: 16px 44px;
+    letter-spacing: 3px;
   }
   
   .organisers-content {
@@ -73,4 +73,7 @@
   .organisers-card {
     padding: 20px;
   }
+
+  /* Smaller fonts for mobile */
+  .organisers-content { font-size: 1.05rem; line-height: 1.6; }
 }

@@ -86,3 +86,13 @@ backdrop-filter: blur(5.1px);
 }
 
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .title-main { font-size: 1.6rem; }
+  .title-bold { font-size: 1.6rem; }
+  .title-on { font-size: 1rem; }
+  .title-details { font-size: 1rem; }
+  .title-date { font-size: 0.95rem; }
+  .title-institute { font-size: 1rem; }
+  .title-brochure-btn { padding: 12px 28px; font-size: 1rem; }
+}

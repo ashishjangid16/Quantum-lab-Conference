@@ -97,9 +97,9 @@
 /* Responsive */
 @media (max-width: 768px) {
   .accommodation-header {
-    font-size: 2rem;
-    padding: 15px 40px;
-    letter-spacing: 2px;
+    font-size: 2.6rem; /* keep header prominent on mobile */
+    padding: 16px 44px;
+    letter-spacing: 3px;
   }
   
   .accommodation-content {
@@ -114,4 +114,11 @@
   .accommodation-card h2 {
     font-size: 1.4rem;
   }
+
+  /* Smaller fonts for mobile */
+  .accommodation-content { font-size: 1.05rem; line-height: 1.6; }
+  .address { font-size: 1rem; }
+  .details { font-size: 1rem; }
+  .accommodation-card h3 { font-size: 1.05rem; }
+  .accommodation-card p { font-size: 0.95rem; }
 }
