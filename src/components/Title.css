@@ -21,7 +21,7 @@ backdrop-filter: blur(5.1px);
   padding: 18px 50px;      /* Large left-right padding for ellipse */
   font-size: 1.15rem;
   font-weight: 600;
-  color: #444;
+  color: #000;
   background: #e5e397;
   border: none;
   border-radius: 32px / 48px; /* Large elliptical roundness */
@@ -41,33 +41,34 @@ backdrop-filter: blur(5.1px);
 .title-main {
   font-size: 2.1rem;
   font-weight: 700;
-  color: #444;
+  color: #000;
   line-height: 1.2;
 }
 
 .title-bold {
   font-weight: 700;
   font-size: 2.1rem;
-  color: #444;
+  color: #000;
 }
 
 .title-on {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #444;
+  color: #000;
   letter-spacing: 2px;
 }
 
 .title-details {
   margin-top: 18px;
   font-size: 1.2rem;
-  color: #444;
+  color: #000;
   font-weight: 500;
 }
 
 .title-date {
   font-style: italic;
   font-size: 1.1rem;
+  color: #000;
 }
 
 .IMAGE-img {
@@ -82,7 +83,21 @@ backdrop-filter: blur(5.1px);
 .title-institute {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #444;
+  color: #000;
+}
+
+.title-contact {
+  margin-top: 20px;
+}
+
+.title-contact-person {
+  font-size: 1rem;
+  color: #000;
+}
+
+.title-contact-phone {
+  font-size: 1rem;
+  color: #000;
 }
 
 
