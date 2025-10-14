@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="contact-hero">
         <div className="contact-header">CONTACT US</div>
       </div>
-      
+
       <div className="contact-content">
         <div className="contact-card">
           <p className="contact-intro">
@@ -25,7 +25,20 @@ const Contact = () => {
             <strong>Phone:</strong> +91-9129113336
           </p>
 
-       
+          <h3>Additional Contacts:</h3>
+          <p className="contact-info">
+            <strong>Shivam Pandey</strong> <br />
+            Department of Materials Science and Technology <br />
+            <strong>Email:</strong> shivampandey.rs.mst24@itbhu.ac.in <br />
+            <strong>Phone:</strong> +91-6394790647
+          </p>
+
+          <p className="contact-info">
+            <strong>Shubham Kumar Gupta</strong> <br />
+            Department of Materials Science and Technology <br />
+            <strong>Email:</strong> shubhamkumargupta.rs.mst24@itbhu.ac.in <br />
+            <strong>Phone:</strong> +91-8318434197
+          </p>
 
           <p className="thanks">We look forward to hearing from you!</p>
         </div>

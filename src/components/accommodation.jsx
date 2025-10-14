@@ -15,9 +15,11 @@ const Accommodation = () => {
           <ul>
             <li>
               Faculty members and researchers will be provided accommodation at the{" "}
-              <strong>Gandhi Technology Alumni Centre, Indian Institute of Technology (BHU), Varanasi</strong>,
-              on a payment basis. The centre offers comfortable and well-maintained rooms within the campus premises,
-              ensuring easy access to all event venues.
+              <strong>
+                Gandhi Technology Alumni Centre, Indian Institute of Technology (BHU), Varanasi
+              </strong>
+              , on a payment basis. The centre offers comfortable and well-maintained rooms within
+              the campus premises, ensuring easy access to all event venues.
             </li>
           </ul>
 
@@ -33,8 +35,8 @@ const Accommodation = () => {
 
           <ul>
             <li>
-              Students will be provided accommodation in the institute hostels at a subsidized fee. Hostel facilities
-              ensure a safe and convenient stay within the IIT (BHU) campus.
+              Students will be provided accommodation in the institute hostels at a subsidized fee.
+              Hostel facilities ensure a safe and convenient stay within the IIT (BHU) campus.
             </li>
           </ul>
 
@@ -53,7 +55,6 @@ const Accommodation = () => {
             <br />
             <strong>Email:</strong> jii2025.events@itbhu.ac.in <br />
             <strong>Phone:</strong> +91-9129113336
-
           </p>
         </div>
 
@@ -107,6 +108,25 @@ const Accommodation = () => {
               </tr>
             </tbody>
           </table>
+
+          {/* Additional Contacts Section */}
+          <div className="additional-contact">
+            <h3>For Any Query Contact:</h3>
+            <p>
+              <strong>Shivam Pandey</strong>
+              <br />
+              <strong>Email:</strong> shivampandey.rs.mst24@itbhu.ac.in
+              <br />
+              <strong>Phone:</strong> +91-6394790647
+            </p>
+            <p>
+              <strong>Shubham Kumar Gupta</strong>
+              <br />
+              <strong>Email:</strong> shubhamkumargupta.rs.mst24@itbhu.ac.in
+              <br />
+              <strong>Phone:</strong> +91-8318434197
+            </p>
+          </div>
         </div>
       </div>
     </section>
