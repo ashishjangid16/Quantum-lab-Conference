@@ -165,3 +165,66 @@
     font-size: 0.9rem;
   }
 }
+
+/* Additional Contact Section (same background) */
+.additional-contact {
+  margin-top: 30px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+.additional-contact h3 {
+  color: #0077b6;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.additional-contact p {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #0077b6;
+}
+
+/* 🌐 Responsive Design */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .additional-contact {
+    font-size: 1rem;
+  }
+
+  .additional-contact h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Phones (≤768px) */
+@media (max-width: 768px) {
+  .additional-contact {
+    font-size: 0.95rem;
+  }
+
+  .additional-contact h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .additional-contact p {
+    border-left: 2px solid #0077b6;
+    padding-left: 8px;
+  }
+}
+
+/* Small Phones (≤480px) */
+@media (max-width: 480px) {
+  .additional-contact {
+    font-size: 0.9rem;
+  }
+
+  .additional-contact h3 {
+    font-size: 0.95rem;
+  }
+}
