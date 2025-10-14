@@ -236,6 +236,8 @@
   font-size: 1rem;
   color: #222;
   line-height: 1.6;
+  word-wrap: break-word; /* ✅ allows long text like emails to wrap */
+  overflow-wrap: anywhere; /* ✅ modern fallback for long words */
 }
 
 .additional-contact h3 {
@@ -249,6 +251,7 @@
   margin-bottom: 10px;
   padding-left: 10px;
   border-left: 3px solid #0077b6;
+  word-break: break-word; /* ✅ ensures email lines don’t overflow */
 }
 
 /* 🌐 Responsive Design */
@@ -268,6 +271,7 @@
 @media (max-width: 768px) {
   .additional-contact {
     font-size: 0.9rem;
+    padding: 8px 4px;
   }
 
   .additional-contact h3 {
@@ -289,5 +293,21 @@
 
   .additional-contact h3 {
     font-size: 0.95rem;
+  }
+
+  .additional-contact p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+/* Extra Small Devices (≤360px) */
+@media (max-width: 360px) {
+  .additional-contact {
+    font-size: 0.8rem;
+  }
+
+  .additional-contact p {
+    font-size: 0.8rem;
   }
 }
