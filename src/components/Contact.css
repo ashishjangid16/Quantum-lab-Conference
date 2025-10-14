@@ -189,6 +189,7 @@
   padding-left: 10px;
   border-left: 3px solid #0077b6;
   word-break: break-word;     /* prevents overflow of email/phone text */
+  overflow-wrap: anywhere;    /* ensures email wraps on small screens */
 }
 
 /* 🌐 Responsive Design */
@@ -219,6 +220,8 @@
   .additional-contact p {
     border-left: 2px solid #0077b6;
     padding-left: 8px;
+    word-break: break-all;   /* crucial for emails on small screens */
+    overflow-wrap: anywhere;
   }
 }
 
@@ -235,6 +238,8 @@
   .additional-contact p {
     font-size: 0.85rem;
     line-height: 1.5;
+    word-break: break-all;   /* ensure long text wraps */
+    overflow-wrap: anywhere;
   }
 }
 
@@ -246,5 +251,7 @@
 
   .additional-contact p {
     font-size: 0.85rem;
+    word-break: break-all;
+    overflow-wrap: anywhere;
   }
 }
