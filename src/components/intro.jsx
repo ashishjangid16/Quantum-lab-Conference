@@ -6,7 +6,7 @@ import smstImage from "../assets/SMST-IMAGE.png";
 const TextComponent = () => (
   <div className="textbox">
     <div className="intro-section">
-      <h2 className="intro-header">About the Conference</h2>
+      <h2 className="intro-header">About the Workshop</h2>
       <div className="intro-row">
         <div className="intro-text left-align">
          This joint Indo-Italy workshop brings together leading researchers, scientists, and industry experts from India and Italy to discuss cutting-edge developments in emergent magnetic storage devices and sensors. With a focus on sustainable technologies, the event will cover advancements in magnetic memory, spin-based electronics, and sensor applications for IoT, healthcare, and data storage. Attendees will gain insights into collaborative research opportunities between the two nations, fostering innovation in materials science and nanotechnology. Join us at the historic IIT BHU campus in Varanasi for two days of engaging talks, panel discussions, and networking.

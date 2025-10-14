@@ -24,7 +24,7 @@ export default function Title() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Download Conference Brochure
+        Download Workshop Brochure
       </a>
     </div>
   );
