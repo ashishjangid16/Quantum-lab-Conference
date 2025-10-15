@@ -57,11 +57,11 @@ const Registration = () => {
 
           <a
             className="registration-link"
-            href="https://forms.gle/bdx3nxQ8WaiSqW6VA"
+            href="https://docs.google.com/forms/d/1vgSVLZKzLkce49mNdntoek0VRFdWNzXO7h9J5pPgC-w/edit?pli=1 "
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://forms.gle/bdx3nxQ8WaiSqW6VA
+            https://docs.google.com/forms/d/1vgSVLZKzLkce49mNdntoek0VRFdWNzXO7h9J5pPgC-w/edit?pli=1 
           </a>
           <img src={qrcode} alt="qrcode" />
           <ul className="registration-list">
