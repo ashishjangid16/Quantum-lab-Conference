@@ -12,12 +12,11 @@ import Speakers from "./components/speaker";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
-import MarqueeBanner from "./components/MarqueeBanner";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
-  // Navigation Component
+
   const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,6 +26,8 @@ function App() {
     };
 
     return (
+      <>
+       <Logo />
       <div className={`top-nav ${menuOpen ? "open" : ""}`}>
         <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -65,10 +66,11 @@ function App() {
           Contact Us
         </button>
       </div>
+      </>
     );
   };
 
-  // Section Renderer
+  // ✅ Section Renderer
   const renderSection = () => {
     switch (activeSection) {
       case "theme":
@@ -131,9 +133,7 @@ function App() {
             <div className="IIT-BHU-bg">
               <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
             </div>
-            <Logo /> {/* Keep Logo outside navbar for center alignment */}
             <Title />
-            <MarqueeBanner /> {/* Horizontal dynamic marquee strip */}
             <Textbox />
           </>
         );
@@ -144,8 +144,8 @@ function App() {
     <div className="App">
       <Nav />
       <div className="content-container">
-        {renderSection()}
-        <Footer />
+      {renderSection()}
+      <Footer />
       </div>
     </div>
   );
