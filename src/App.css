@@ -13,12 +13,6 @@ html {
   min-height: 100vh;
 }
 
-.app-container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .content-container {
   padding: 20px;
 }
@@ -96,16 +90,13 @@ html {
 
 /* ===== Responsive Navigation ===== */
 @media (max-width: 768px) {
-  .content-container {
-    padding-top: 150px !important;
-  }
-
   .top-nav {
     position: fixed;
-    width: 100vw;
-    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* center links horizontally */
     background-color: rgba(255, 255, 255, 0.534);
     padding-top: 50px;
     gap: 10px;
@@ -117,21 +108,20 @@ html {
 
   .nav-link {
     width: 100%;
-    text-align: left;
-    display: none; /* hide links by default */
-    padding: 12px 20px;
+    text-align: center;
+    display: none;
+    padding: 12px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     color: black;
   }
 
-  .menu-toggle {
-    display: flex;
-  }
-
-  /* When menu is open */
   .top-nav.open .nav-link {
     display: block;
     animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .menu-toggle {
+    display: flex;
   }
 
   @keyframes fadeIn {
@@ -144,36 +134,42 @@ html {
       transform: translateY(0);
     }
   }
+
+  .content-container {
+    padding-top: 180px; /* space for fixed navbar on mobile */
+  }
 }
 
 /* ===== Marquee Strip ===== */
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background-color: #bfdce3b4; /* semi-transparent */
+  background-color: #ff0000; /* red background */
   padding: 4px 0; /* reduced height */
   position: relative;
   margin: 10px 0;
+  border-radius: 4px;
 }
 
 .marquee {
   display: flex;
   width: max-content;
-  animation: scroll 40s linear infinite; /* slower scrolling */
+  animation: scroll 20s linear infinite; /* adjust speed */
 }
 
 .marquee span {
-  color: red;
+  color: #ffffff; /* white text */
   font-weight: normal; /* not bold */
-  font-size: 14px; /* smaller font */
+  font-size: 14px;
+  white-space: nowrap;
   margin-right: 50px;
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }

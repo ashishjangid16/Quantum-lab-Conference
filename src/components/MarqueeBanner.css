@@ -37,7 +37,7 @@
     font-size: 12px; /* smaller text on mobile */
   }
   .marquee {
-    animation-duration: 10s; /* faster on small screens */
+    animation-duration: 12s; /* faster on small screens */
   }
 }
 

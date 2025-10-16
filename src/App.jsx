@@ -12,7 +12,7 @@ import Speakers from "./components/speaker";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
-import MarqueeBanner from "./components/MarqueeBanner"; // 🔹 Horizontal marquee
+import MarqueeBanner from "./components/MarqueeBanner";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -27,47 +27,44 @@ function App() {
     };
 
     return (
-      <>
-        <Logo />
-        <div className={`top-nav ${menuOpen ? "open" : ""}`}>
-          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-
-          <button className="nav-link" onClick={() => handleNavClick("home")}>
-            Home
-          </button>
-          <button className="nav-link" onClick={() => handleNavClick("theme")}>
-            Theme
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("registration")}
-          >
-            Registration
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("committee")}
-          >
-            Committee
-          </button>
-          <button className="nav-link" onClick={() => handleNavClick("speaker")}>
-            Speaker
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("accommodation")}
-          >
-            Accommodation
-          </button>
-          <button className="nav-link" onClick={() => handleNavClick("contact")}>
-            Contact Us
-          </button>
+      <div className={`top-nav ${menuOpen ? "open" : ""}`}>
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </>
+
+        <button className="nav-link" onClick={() => handleNavClick("home")}>
+          Home
+        </button>
+        <button className="nav-link" onClick={() => handleNavClick("theme")}>
+          Theme
+        </button>
+        <button
+          className="nav-link"
+          onClick={() => handleNavClick("registration")}
+        >
+          Registration
+        </button>
+        <button
+          className="nav-link"
+          onClick={() => handleNavClick("committee")}
+        >
+          Committee
+        </button>
+        <button className="nav-link" onClick={() => handleNavClick("speaker")}>
+          Speaker
+        </button>
+        <button
+          className="nav-link"
+          onClick={() => handleNavClick("accommodation")}
+        >
+          Accommodation
+        </button>
+        <button className="nav-link" onClick={() => handleNavClick("contact")}>
+          Contact Us
+        </button>
+      </div>
     );
   };
 
@@ -129,14 +126,14 @@ function App() {
           </>
         );
       default:
-        // Home / default section
         return (
           <>
             <div className="IIT-BHU-bg">
               <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
             </div>
+            <Logo /> {/* Keep Logo outside navbar for center alignment */}
             <Title />
-            <MarqueeBanner /> {/* 🔹 Horizontal dynamic marquee strip */}
+            <MarqueeBanner /> {/* Horizontal dynamic marquee strip */}
             <Textbox />
           </>
         );

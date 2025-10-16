@@ -2,7 +2,7 @@ import React from "react";
 import "./MarqueeBanner.css";
 
 const MarqueeBanner = () => {
-  const text = "Welcome to Indo-Italy Joint Workshop 2025 (18-19 Nov). Register by 10/11/2025. Shortlisted candidates will be notified by 12/11/2025. Selected participants must pay the fee by 10/11/2025. ";
+  const text = "Welcome to the Indo-Italy Joint Workshop 2025 (18–19 November)! Register by 10/11/2025 and be part of an exciting exchange of knowledge, ideas, and innovation.";
 
   return (
     <div className="marquee-container">
