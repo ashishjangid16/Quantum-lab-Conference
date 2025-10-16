@@ -8,15 +8,11 @@ const ImageDisplay = ({ imageObj }) => {
         <img
           src={imageObj.imageSrc}
           className="member_image"
+          alt={imageObj.name}
         />
       </div>
-
-      <p className="text-lg font-semibold text-gray-800 text-center">
-        {imageObj.name}
-      </p>
     </div>
   );
 };
-
 
 export default ImageDisplay;

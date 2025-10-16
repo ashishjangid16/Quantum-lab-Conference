@@ -153,3 +153,50 @@
     font-size: 0.9rem;
   }
 }
+
+/* Committee Member Card Hover Style (same as speakers) */
+.committee-member {
+  text-align: center;
+  background:  #bfdce3b4;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.committee-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Committee Member Image */
+.committee-member img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0077b6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on image */
+.committee-member img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #0077b6;
+}
+
+/* Member Name */
+.committee-member p {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Section Title (Patron, Convenor, etc.) */
+.committee-member h2 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #003b5b;
+}
+
