@@ -97,15 +97,15 @@
 
 /* Speaker name */
 /* Speaker name */
+
 .speaker-name {
- .speaker-name {
-  margin-top: 12px;
-  font-weight: 600;
   font-size: 1.1rem;
-  color: #000;
+  color: #222;
+  font-weight: 700; /* makes the name bold */
 }
 
-}
+
+
 
 /* Speaker link (in brackets) */
 .speaker-link {
