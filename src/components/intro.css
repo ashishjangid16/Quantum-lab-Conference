@@ -80,3 +80,20 @@
   color: #444;
   line-height: 1.7;
 }
+
+.intro-img {
+  max-width: 375px;
+  width: 100%;
+  border: 2px solid #e9d890;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(150, 120, 20, 0.09);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+
+.intro-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-color: #b6a54a;
+}

@@ -18,7 +18,7 @@ backdrop-filter: blur(5.1px);
 }
 .title-brochure-btn {
   display: inline-block;
-  padding: 18px 50px;      /* Large left-right padding for ellipse */
+  padding: 15px 45px;      /* Large left-right padding for ellipse */
   font-size: 1.15rem;
   font-weight: 600;
   color: #000;
@@ -110,6 +110,6 @@ backdrop-filter: blur(5.1px);
   .title-details { font-size: 1rem; }
   .title-date { font-size: 0.95rem; }
   .title-institute { font-size: 1rem; }
-  .title-brochure-btn { padding: 12px 28px; font-size: 1rem; }
+  .title-brochure-btn { padding: 10px 28px; font-size: 1rem; }
   .IMAGE-img { max-width: 100%; }
 }
