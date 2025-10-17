@@ -25,6 +25,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 5.png"),
     link: "https://www.iitk.ac.in/new/rohit-medwal",
   },
+   {
+    name: "Dr. Jyoti Ranjan Mohanty",
+    imageSrc: require("../assets/speaker/speaker 6.png"),
+    link: "https://people.iith.ac.in/jmohanty/ ",
+  },
 ];
 
 export default function Speakers() {
