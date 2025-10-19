@@ -30,6 +30,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 6.png"),
     link: "https://people.iith.ac.in/jmohanty/ ",
   },
+   {
+    name: "Dr. Ritwik Mondal",
+    imageSrc: require("../assets/speaker/speaker 7.png"),
+    link: "https://sites.google.com/view/ritwik-utsg/about-pi ",
+  },
 ];
 
 export default function Speakers() {
