@@ -35,6 +35,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 7.png"),
     link: "https://sites.google.com/view/ritwik-utsg/about-pi ",
   },
+   {
+    name: "Dr. Vijay Raj Singh",
+    imageSrc: require("../assets/speaker/speaker 8.png"),
+    link: "https://cusb.irins.org/profile/109198 ",
+  },
 ];
 
 export default function Speakers() {
