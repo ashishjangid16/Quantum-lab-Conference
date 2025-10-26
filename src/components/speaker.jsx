@@ -40,6 +40,21 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 8.png"),
     link: "https://cusb.irins.org/profile/109198 ",
   },
+   {
+    name: "Dr. Shivam Verma",
+    imageSrc: require("../assets/speaker/speaker 9.png"),
+    link: "https://www.iitbhu.ac.in/dept/ece/people/shivamece  ",
+  },
+   {
+    name: "Dr. Biswanath Bhoi",
+    imageSrc: require("../assets/speaker/speaker 10.png"),
+    link: "https://iitbhu.ac.in/dept/phy/people/biswanathphy ",
+  },
+   {
+    name: "Prof. Sandip Chatterjee",
+    imageSrc: require("../assets/speaker/speaker 11.png"),
+    link: "https://iitbhu.ac.in/dept/phy/people/schatterjiapp ",
+  },
 ];
 
 export default function Speakers() {
