@@ -55,6 +55,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 11.png"),
     link: "https://iitbhu.ac.in/dept/phy/people/schatterjiapp ",
   },
+  {
+    name: "Dr. Dushyant Kumar",
+    imageSrc: require("../assets/speaker/speaker 12.png"),
+    link: "https://iitj.ac.in/People/Profile/d6be896f-eae8-404c-8127-044afcc600ff ",
+  },
 ];
 
 export default function Speakers() {
