@@ -60,6 +60,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 12.png"),
     link: "https://iitj.ac.in/People/Profile/d6be896f-eae8-404c-8127-044afcc600ff ",
   },
+   {
+    name: "Dr. Himanshu Fulara",
+    imageSrc: require("../assets/speaker/speaker 13.png"),
+    link: "https://www.iitr.ac.in/~PH/Himanshu_Fulara ",
+  },
 ];
 
 export default function Speakers() {
