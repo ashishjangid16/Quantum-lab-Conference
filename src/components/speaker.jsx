@@ -65,6 +65,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 13.png"),
     link: "https://www.iitr.ac.in/~PH/Himanshu_Fulara ",
   },
+  {
+    name: "Dr. Rajeev Singh",
+    imageSrc: require("../assets/speaker/speaker 14.png"),
+    link: "https://www.iitbhu.ac.in/dept/phy/people/rajeevsphy  ",
+  },
 ];
 
 export default function Speakers() {
