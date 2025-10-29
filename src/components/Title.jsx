@@ -1,5 +1,5 @@
 import "./Title.css";
-import brochurePdf from "../assets/Nov_Conference Brochure.pdf";
+import brochurePdf from "../assets/Conference.pdf";
 
 export default function Title() {
   return (
