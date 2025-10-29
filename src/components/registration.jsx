@@ -72,8 +72,8 @@ const Registration = () => {
             <li>Seats are limited (only 75 participants)</li>
             <b>Workshop fees:</b>
             <li>₹3500 (early-career researchers/faculty)</li>
-            <li>₹2500 (PhD scholars)</li>
-            <li>₹1500 (Master's students)</li>
+            <li><span style={{ textDecoration: 'line-through' }}>₹2500</span>  ₹1500 (PhD scholars)</li>
+            <li><span style={{ textDecoration: 'line-through' }}>₹1500</span>  ₹1000 (Master's students)</li>
           </ul>
         </div>
 
