@@ -70,6 +70,16 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 14.png"),
     link: "https://www.iitbhu.ac.in/dept/phy/people/rajeevsphy  ",
   },
+   {
+    name: "Prof. Soumik Mukhopadhyay",
+    imageSrc: require("../assets/speaker/speaker 15.png"),
+    link: "https://www.iitk.ac.in/new/dr-soumik-mukhopadhyay  ",
+  },
+    {
+    name: "Prof. Chandana Rath",
+    imageSrc: require("../assets/speaker/speaker 16.png"),
+    link: "https://www.iitbhu.ac.in/dept/mst/people/crathmst ",
+  },
 ];
 
 export default function Speakers() {
