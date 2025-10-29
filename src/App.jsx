@@ -12,65 +12,68 @@ import Speakers from "./components/speaker";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
+import Marquee from "./components/marquee";
+import SpecialOffer from "./components/specialOffer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
-
 
   const Nav = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleNavClick = (section) => {
       setActiveSection(section);
-      setMenuOpen(false); // close menu after click
+      setMenuOpen(false);
     };
 
     return (
       <>
-       <Logo />
-      <div className={`top-nav ${menuOpen ? "open" : ""}`}>
-        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <Logo />
+        <div className={`top-nav ${menuOpen ? "open" : ""}`}>
+          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        <button className="nav-link" onClick={() => handleNavClick("home")}>
-          Home
-        </button>
-        <button className="nav-link" onClick={() => handleNavClick("theme")}>
-          Theme
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => handleNavClick("registration")}
-        >
-          Registration
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => handleNavClick("committee")}
-        >
-          Committee
-        </button>
-        <button className="nav-link" onClick={() => handleNavClick("speaker")}>
-          Speaker
-        </button>
-        <button
-          className="nav-link"
-          onClick={() => handleNavClick("accommodation")}
-        >
-          Accommodation
-        </button>
-        <button className="nav-link" onClick={() => handleNavClick("contact")}>
-          Contact Us
-        </button>
-      </div>
+          <button className="nav-link" onClick={() => handleNavClick("home")}>
+            Home
+          </button>
+          <button className="nav-link" onClick={() => handleNavClick("theme")}>
+            Theme
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("registration")}
+          >
+            Registration
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("committee")}
+          >
+            Committee
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("speaker")}
+          >
+            Speaker
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("accommodation")}
+          >
+            Accommodation
+          </button>
+          <button className="nav-link" onClick={() => handleNavClick("contact")}>
+            Contact Us
+          </button>
+        </div>
       </>
     );
   };
 
-  // ✅ Section Renderer
   const renderSection = () => {
     switch (activeSection) {
       case "theme":
@@ -134,6 +137,8 @@ function App() {
               <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
             </div>
             <Title />
+            <Marquee text="Students can enjoy Early Bird Registration Discount. Updated Registration fee for PhD scholars is Rs 1500 & Master's student is Rs 1000." />
+            <SpecialOffer />
             <Textbox />
           </>
         );
@@ -144,8 +149,8 @@ function App() {
     <div className="App">
       <Nav />
       <div className="content-container">
-      {renderSection()}
-      <Footer />
+        {renderSection()}
+        <Footer />
       </div>
     </div>
   );
