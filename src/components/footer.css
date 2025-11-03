@@ -1,3 +1,4 @@
+/* Existing styles remain unchanged */
 .footer {
   background: #232529;
   color: #c5c7c9;
@@ -33,7 +34,7 @@
   font-size: 1.1rem;
 }
 
-/* Add this new rule to make address section text white */
+/* Address section text */
 .footer-section.address .footer-item span {
   color: #fff;
 }
@@ -55,6 +56,17 @@
 
 .footer-section a:hover {
   color: #3755a0;
+}
+
+/* ✅ Added: Make only the email link bright blue */
+.footer-mail {
+  color: #239cff !important;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.footer-mail:hover {
+  color: #5ebcff;
 }
 
 .footer-designedby {
