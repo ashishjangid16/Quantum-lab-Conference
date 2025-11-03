@@ -80,6 +80,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 16.png"),
     link: "https://www.iitbhu.ac.in/dept/mst/people/crathmst ",
   },
+    {
+    name: "Dr. Saurabh Kumar Srivastav",
+    imageSrc: require("../assets/speaker/speaker 17.png"),
+    link: "https://scholar.google.com/citations?user=PaADPJwAAAAJ&hl=en",
+  },
 ];
 
 export default function Speakers() {
