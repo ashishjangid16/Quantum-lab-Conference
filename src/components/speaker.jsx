@@ -85,6 +85,11 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 17.png"),
     link: "https://scholar.google.com/citations?user=PaADPJwAAAAJ&hl=en",
   },
+  {
+    name: "Dr. Bhagavan Behera",
+    imageSrc: require("../assets/speaker/speaker 18.png"),
+    link: "https://www.nal.res.in/en/bhagaban-behera-dr-1",
+  },
 ];
 
 export default function Speakers() {
