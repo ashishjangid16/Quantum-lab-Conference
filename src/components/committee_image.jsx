@@ -8,7 +8,8 @@ const ImageDisplay = ({ imageObj }) => {
         <img
           src={imageObj.imageSrc}
           className="member_image"
-          alt="member image"
+          alt=""
+          aria-hidden="true"
         />
       </div>
 
