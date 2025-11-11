@@ -8,7 +8,7 @@ import "./App.css";
 import Title from "./components/Title";
 import IIT_BHU from "./assets/IIT-BHU.png";
 import IIT_BHU_2 from "./assets/IIT-BHU 2.jpg";
-import Speakers from "./components/speaker";
+import Speakers from "./components/speakers";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
@@ -58,7 +58,7 @@ function App() {
             className="nav-link"
             onClick={() => handleNavClick("speaker")}
           >
-            Speaker
+            Speakers
           </button>
           <button
             className="nav-link"
