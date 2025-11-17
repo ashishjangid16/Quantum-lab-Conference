@@ -222,3 +222,24 @@ html {
     opacity: 0.8;
   }
 }
+
+.program-btn {
+   display: inline-block;
+  padding: 15px 45px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #000;
+  background: #e6e261;
+  border: none;
+  border-radius: 32px / 48px;
+  box-shadow: 0 4px 30px rgba(180, 172, 60, 0.13);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.program-btn:hover {
+  background: #f0e26d
+ 
+}
+

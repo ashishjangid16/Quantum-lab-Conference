@@ -15,9 +15,9 @@ import Contact from "./components/Contact";
 import Marquee from "./components/marquee";
 import SpecialOffer from "./components/specialOffer";
 import "./components/SimpleSponsors.css";
+import Program from "./assets/Program.pdf";
 
-
-// ✅ UPDATED SPONSORS COMPONENT (Classic Div Style)
+// ---------------- SPONSORS (Div Style) ----------------
 const Sponsors = () => {
   const sponsors = [
     "Sohan Scientific Instruments",
@@ -135,7 +135,8 @@ function App() {
           </>
         );
 
-      default: // HOME
+      default:
+        // ---------------- HOME SECTION ----------------
         return (
           <>
             <div className="IIT-BHU-bg">
@@ -148,9 +149,22 @@ function App() {
 
             <SpecialOffer />
 
+            {/* PROGRAM BUTTON WITH SPONSOR COLOR */}
+            <div style={{ textAlign: "center", marginTop: "20px" }}>
+              <a
+  href={Program}
+  className="program-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Program Details
+</a>
+
+            </div>
+
             <Textbox />
 
-            {/* ⭐ SPONSORS SECTION INSERTED HERE ⭐ */}
+            {/* Sponsors Section */}
             <Sponsors />
           </>
         );
