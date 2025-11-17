@@ -14,6 +14,31 @@ import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
 import Marquee from "./components/marquee";
 import SpecialOffer from "./components/specialOffer";
+import "./components/SimpleSponsors.css";
+
+
+// ✅ UPDATED SPONSORS COMPONENT (Classic Div Style)
+const Sponsors = () => {
+  const sponsors = [
+    "Sohan Scientific Instruments",
+    "Rohan Scientific & Chemical Co",
+    "Nanoglobal",
+  ];
+
+  return (
+    <div className="simple-sponsor-section">
+      <h2 className="simple-sponsor-title">Sponsors</h2>
+
+      <div className="simple-sponsor-container">
+        {sponsors.map((name, index) => (
+          <div key={index} className="simple-sponsor-box">
+            {name}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -36,39 +61,13 @@ function App() {
             <span></span>
           </div>
 
-          <button className="nav-link" onClick={() => handleNavClick("home")}>
-            Home
-          </button>
-          <button className="nav-link" onClick={() => handleNavClick("theme")}>
-            Theme
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("registration")}
-          >
-            Registration
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("committee")}
-          >
-            Committee
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("speaker")}
-          >
-            Speakers
-          </button>
-          <button
-            className="nav-link"
-            onClick={() => handleNavClick("accommodation")}
-          >
-            Accommodation
-          </button>
-          <button className="nav-link" onClick={() => handleNavClick("contact")}>
-            Contact Us
-          </button>
+          <button className="nav-link" onClick={() => handleNavClick("home")}>Home</button>
+          <button className="nav-link" onClick={() => handleNavClick("theme")}>Theme</button>
+          <button className="nav-link" onClick={() => handleNavClick("registration")}>Registration</button>
+          <button className="nav-link" onClick={() => handleNavClick("committee")}>Committee</button>
+          <button className="nav-link" onClick={() => handleNavClick("speaker")}>Speakers</button>
+          <button className="nav-link" onClick={() => handleNavClick("accommodation")}>Accommodation</button>
+          <button className="nav-link" onClick={() => handleNavClick("contact")}>Contact Us</button>
         </div>
       </>
     );
@@ -85,6 +84,7 @@ function App() {
             <Theme />
           </>
         );
+
       case "registration":
         return (
           <>
@@ -94,6 +94,7 @@ function App() {
             <Registration />
           </>
         );
+
       case "committee":
         return (
           <>
@@ -103,6 +104,7 @@ function App() {
             <Organisers />
           </>
         );
+
       case "speaker":
         return (
           <>
@@ -112,6 +114,7 @@ function App() {
             <Speakers />
           </>
         );
+
       case "accommodation":
         return (
           <>
@@ -121,6 +124,7 @@ function App() {
             <Accommodation />
           </>
         );
+
       case "contact":
         return (
           <>
@@ -130,16 +134,24 @@ function App() {
             <Contact />
           </>
         );
-      default:
+
+      default: // HOME
         return (
           <>
             <div className="IIT-BHU-bg">
               <img src={IIT_BHU} alt="IIT-BHU" className="IIT-BHU-img" />
             </div>
+
             <Title />
+
             <Marquee text="Students can enjoy Early Bird Registration Discount. Updated Registration fee for PhD scholars is Rs 1500 & Master's student is Rs 1000." />
+
             <SpecialOffer />
+
             <Textbox />
+
+            {/* ⭐ SPONSORS SECTION INSERTED HERE ⭐ */}
+            <Sponsors />
           </>
         );
     }

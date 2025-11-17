@@ -1,0 +1,38 @@
+.simple-sponsor-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.simple-sponsor-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Sponsor container */
+.simple-sponsor-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* ⭐ Classic Highlighted Style ⭐ */
+.simple-sponsor-box {
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;                 /* Text color */
+  background: linear-gradient(135deg, #2c3e50, #4b79a1); /* Classic deep blue gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Smooth hover glow */
+.simple-sponsor-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
