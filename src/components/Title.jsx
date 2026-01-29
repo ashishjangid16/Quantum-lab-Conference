@@ -5,12 +5,12 @@ export default function Title() {
   return (
     <div className="title-container">
       <div className="title-main">
-        <span className="title-bold">INDO-ITALY JOINT WORKSHOP</span><br />
+        <span className="title-bold">INDO-JAPAN JOINT WORKSHOP</span><br />
         <span className="title-on">ON</span><br />
-        <span className="title-bold">EMERGENT MAGNETIC STORAGE DEVICES AND SENSORS</span>
+        <span className="title-bold">TRENDS IN QUANTUM MATERIALS</span>
       </div>
       <div className="title-details">
-        <span className="title-date">18-19 November, 2025</span><br />
+        <span className="title-date">24 March, 2026 | Dev & Vardhana Goswami Lecture Hall Complex</span><br />
         <span className="title-institute"><strong>School of Materials Science and Technology</strong></span><br />
         <span className="title-institute"><strong>Indian Institute of Technology (BHU), Varanasi</strong></span>
       </div>

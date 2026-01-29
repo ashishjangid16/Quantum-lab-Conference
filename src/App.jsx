@@ -12,33 +12,7 @@ import Speakers from "./components/speakers";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
-import Marquee from "./components/marquee";
-import SpecialOffer from "./components/specialOffer";
-import "./components/SimpleSponsors.css";
 import Program from "./assets/Program.pdf";
-
-// ---------------- SPONSORS (Div Style) ----------------
-const Sponsors = () => {
-  const sponsors = [
-    "Sohan Scientific Instruments",
-    "Rohan Scientific & Chemical Co",
-    "Nanoglobal",
-  ];
-
-  return (
-    <div className="simple-sponsor-section">
-      <h2 className="simple-sponsor-title">Sponsors</h2>
-
-      <div className="simple-sponsor-container">
-        {sponsors.map((name, index) => (
-          <div key={index} className="simple-sponsor-box">
-            {name}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -54,20 +28,53 @@ function App() {
     return (
       <>
         <Logo />
+
         <div className={`top-nav ${menuOpen ? "open" : ""}`}>
-          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <div
+            className="menu-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
             <span></span>
             <span></span>
             <span></span>
           </div>
 
-          <button className="nav-link" onClick={() => handleNavClick("home")}>Home</button>
-          <button className="nav-link" onClick={() => handleNavClick("theme")}>Theme</button>
-          <button className="nav-link" onClick={() => handleNavClick("registration")}>Registration</button>
-          <button className="nav-link" onClick={() => handleNavClick("committee")}>Committee</button>
-          <button className="nav-link" onClick={() => handleNavClick("speaker")}>Speakers</button>
-          <button className="nav-link" onClick={() => handleNavClick("accommodation")}>Accommodation</button>
-          <button className="nav-link" onClick={() => handleNavClick("contact")}>Contact Us</button>
+          <button className="nav-link" onClick={() => handleNavClick("home")}>
+            Home
+          </button>
+          <button className="nav-link" onClick={() => handleNavClick("theme")}>
+            Theme
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("registration")}
+          >
+            Registration
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("committee")}
+          >
+            Committee
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("speaker")}
+          >
+            Speakers
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("accommodation")}
+          >
+            Accommodation
+          </button>
+          <button
+            className="nav-link"
+            onClick={() => handleNavClick("contact")}
+          >
+            Contact Us
+          </button>
         </div>
       </>
     );
@@ -145,27 +152,19 @@ function App() {
 
             <Title />
 
-            <Marquee text="Students can enjoy Early Bird Registration Discount. Updated Registration fee for PhD scholars is Rs 1500 & Master's student is Rs 1000." />
-
-            <SpecialOffer />
-
-            {/* PROGRAM BUTTON WITH SPONSOR COLOR */}
-            <div style={{ textAlign: "center", marginTop: "20px" }}>
+            {/* Program PDF Button */}
+            <div className="program-btn-wrapper">
               <a
-  href={Program}
-  className="program-btn"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Program Details
-</a>
-
+                href={Program}
+                className="program-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Program Details
+              </a>
             </div>
 
             <Textbox />
-
-            {/* Sponsors Section */}
-            <Sponsors />
           </>
         );
     }
