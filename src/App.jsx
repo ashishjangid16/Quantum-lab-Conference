@@ -12,7 +12,7 @@ import Speakers from "./components/speakers";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
-import Program from "./assets/Program.pdf";
+// import Program from "./assets/Program.pdf";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -153,7 +153,7 @@ function App() {
             <Title />
 
             {/* Program PDF Button */}
-            <div className="program-btn-wrapper">
+            {/* <div className="program-btn-wrapper">
               <a
                 href={Program}
                 className="program-btn"
@@ -162,7 +162,7 @@ function App() {
               >
                 Program Details
               </a>
-            </div>
+            </div> */}
 
             <Textbox />
           </>

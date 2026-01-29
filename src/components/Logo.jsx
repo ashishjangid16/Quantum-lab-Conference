@@ -1,7 +1,7 @@
 import React from "react";
 import "./Logo.css";
 import logo from "../assets/logo.png";
-import inrimLogo from "../assets/INRIM logo.jpg";
+import inrimLogo from "../assets/NIMS logo.jpg";
 
 export default function Logo() {
   return (
@@ -10,7 +10,7 @@ export default function Logo() {
         <img src={logo} alt="IIT BHU logo" className="logo-img" />
       </div>
       <div className="logo-container logo-right">
-        <img src={inrimLogo} alt="INRIM logo" className="logo-img" />
+        <img src={inrimLogo} alt="NIMS logo" className="logo-img" />
       </div>
     </>
   );

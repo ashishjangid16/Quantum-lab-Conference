@@ -5,7 +5,7 @@ export default function Title() {
   return (
     <div className="title-container">
       <div className="title-main">
-        <span className="title-bold">INDO-JAPAN JOINT WORKSHOP</span><br />
+        <span className="title-bold">INDO-JAPAN WORKSHOP</span><br />
         <span className="title-on">ON</span><br />
         <span className="title-bold">TRENDS IN QUANTUM MATERIALS</span>
       </div>
