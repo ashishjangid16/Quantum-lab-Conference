@@ -26,12 +26,12 @@ const Contact = () => {
           </p>
 
           <h3>Additional Contacts:</h3>
-          <p className="contact-info">
+          {/* <p className="contact-info">
             <strong>Shivam Pandey</strong> <br />
             Department of Materials Science and Technology <br />
             <strong>Email:</strong> shivampandey.rs.mst24@itbhu.ac.in <br />
             <strong>Phone:</strong> +91-6394790647
-          </p>
+          </p> */}
 
           <p className="contact-info">
             <strong>Shubham Kumar Gupta</strong> <br />

@@ -5,37 +5,40 @@ import qrcode from "../assets/qrcode.png";
 const BankDetails = () => {
   return (
     <div className="registration-card">
-      <div className="registration-subheader"><strong>Bank Details :</strong></div>
+      <div className="registration-subheader">
+        <strong>Bank Details :</strong>
+      </div>
+
       <table className="bank-details-table">
         <tbody>
           <tr>
-            <td><strong> Name of Account :</strong></td>
+            <td><strong>Name of Account :</strong></td>
             <td>IIT(BHU)-Main Account (Institute Development Fund)</td>
           </tr>
           <tr>
-            <td><strong> Account Number :</strong></td>
+            <td><strong>Account Number :</strong></td>
             <td>32778803937</td>
           </tr>
           <tr>
-            <td><strong> Account Type :</strong></td>
+            <td><strong>Account Type :</strong></td>
             <td>Current Account</td>
           </tr>
           <tr>
-            <td><strong> Account Holder Name :</strong></td>
+            <td><strong>Account Holder Name :</strong></td>
             <td>The Registrar, IIT(BHU)</td>
           </tr>
           <tr>
-            <td><strong> Name of Bank & Address :</strong></td>
+            <td><strong>Name of Bank & Address :</strong></td>
             <td>
-              State Bank of India, IT-BHU Branch (Branch Code- 11445)
+              State Bank of India, IT-BHU Branch (Branch Code-11445)
               <br />
-              IIT(BHU), Campus, Varanasi-221 005
+              IIT(BHU), Campus, Varanasi-221005
               <br />
               Ph. No.: 0542-2369181
             </td>
           </tr>
           <tr>
-            <td><strong> IFSC Code :</strong></td>
+            <td><strong>IFSC Code :</strong></td>
             <td>SBIN0011445</td>
           </tr>
         </tbody>
@@ -50,10 +53,12 @@ const Registration = () => {
       <div className="registration-hero">
         <div className="registration-header">REGISTRATION</div>
       </div>
-      
+
       <div className="registration-content">
         <div className="registration-card">
-           <div className="registration-subheader"><strong>Registration Form:</strong></div>
+          <div className="registration-subheader">
+            <strong>Registration Form:</strong>
+          </div>
 
           <a
             className="registration-link"
@@ -61,24 +66,33 @@ const Registration = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://docs.google.com/forms/d/1vgSVLZKzLkce49mNdntoek0VRFdWNzXO7h9J5pPgC-w/edit?pli=1 
+            https://docs.google.com/forms/d/1vgSVLZKzLkce49mNdntoek0VRFdWNzXO7h9J5pPgC-w
           </a>
-          <img src={qrcode} alt="qrcode" />
+
+        
+          <img
+            src={qrcode}
+            alt="QR Code for Registration"
+            className="qr-code"
+          />
+
           <ul className="registration-list">
             <li>Register online by 10/03/2026</li>
             <li>Selections are based on research relevance</li>
             <li>Shortlisted candidates will be notified by 15/03/2026</li>
-            <li>Selected participants must pay the fee by 8/03/2026</li>
+            <li>Selected participants must pay the fee by 08/03/2026</li>
             <li>Seats are limited (only 75 participants)</li>
-            <b>Workshop fees:</b>
+
+            <strong>Workshop fees:</strong>
             <li>₹1000 (early-career researchers/faculty)</li>
             <li>₹500 (PhD scholars & Master’s students)</li>
-            <li>Accommodation will be provided on a payment basis 
-(booking deadlines 01 /03/2026)</li>
+            <li>
+              Accommodation will be provided on payment basis
+              (booking deadline: 01/03/2026)
+            </li>
           </ul>
         </div>
 
-        {/* Bank details component */}
         <BankDetails />
       </div>
     </section>

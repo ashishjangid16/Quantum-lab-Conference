@@ -112,13 +112,13 @@ const Accommodation = () => {
           {/* Additional Contacts Section */}
           <div className="additional-contact">
             <h3>For Any Query Contact:</h3>
-            <p>
+            {/* <p>
               <strong>Shivam Pandey</strong>
               <br />
               <strong>Email:</strong> shivampandey.rs.mst24@itbhu.ac.in
               <br />
               <strong>Phone:</strong> +91-6394790647
-            </p>
+            </p> */}
             <p>
               <strong>Shubham Kumar Gupta</strong>
               <br />
