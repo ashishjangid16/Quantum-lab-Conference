@@ -5,7 +5,7 @@ export default function Title() {
   return (
     <div className="title-container">
       <div className="title-main">
-        <span className="title-bold">INDO-JAPAN WORKSHOP</span><br />
+        <span className="title-bold">IIT(BHU)-NIMS WORKSHOP</span><br />
         <span className="title-on">ON</span><br />
         <span className="title-bold">TRENDS IN QUANTUM MATERIALS</span>
       </div>
@@ -15,8 +15,9 @@ export default function Title() {
         <span className="title-institute"><strong>Indian Institute of Technology (BHU), Varanasi</strong></span>
       </div>
       <div className="title-contact">
-        <span className="title-contact-person">Dr. Shrawan Mishra (shrawan.mst@iitbhu.ac.in)</span><br />
-        <span className="title-contact-phone">+91-9129113336</span>
+        <span className="title-contact-person">Dr. Shrawan Mishra</span><br />
+        <span className="title-contact-phone">+91-9129113336</span><br />
+        <a href="mailto:tqm2026.events@itbhu.ac.in">tqm2026.events@itbhu.ac.in</a>
       </div>
       <a
         className="title-brochure-btn"

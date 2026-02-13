@@ -15,7 +15,7 @@ const TextComponent = () => (
         <div className="intro-text left-align">
 
           <p>
-            This Indo-Japan workshop brings together leading researchers, scientists, and industry experts from India
+            This IIT(BHU)-NIMS workshop brings together leading researchers, scientists, and industry experts from India
             and Japan to discuss cutting-edge developments in emergent quantum materials. This workshop will offer
             an opportunity to emphasise the research tradition and the trends of adapting the research fundamentals in
             today’s world.
