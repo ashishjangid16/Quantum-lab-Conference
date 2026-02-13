@@ -1,7 +1,7 @@
 import React from "react";
 import "./intro.css";
 import sensorImage from "../assets/sensor1.png";
-//import sensorImage2 from "../assets/sensor2.png";
+import sensorImage2 from "../assets/sensor2.png";   
 import smstImage from "../assets/SMST-IMAGE.png";
 
 const TextComponent = () => (
@@ -16,9 +16,9 @@ const TextComponent = () => (
 
           <p>
             This Indo-Japan workshop brings together leading researchers, scientists, and industry experts from India
-and Japan to discuss cutting-edge developments in emergent quantum materials. This workshop will offer
-an opportunity to emphasise the research tradition and the trends of adapting the research fundamentals in
-today’s world. 
+            and Japan to discuss cutting-edge developments in emergent quantum materials. This workshop will offer
+            an opportunity to emphasise the research tradition and the trends of adapting the research fundamentals in
+            today’s world.
           </p>
 
           <p>
@@ -44,13 +44,21 @@ today’s world.
 
         </div>
 
-        <img
-          src={sensorImage}
-          alt="Conference Sensor"
-          className="intro-img"
-        />
+        {/* Image container */}
+        <div className="intro-image-column">
+          <img
+            src={sensorImage}
+            alt="Conference Sensor 1"
+            className="intro-img"
+          />
+          <img
+            src={sensorImage2}
+            alt="Conference Sensor 2"
+            className="intro-img"
+          />
+        </div>
+
       </div>
-      
     </div>
 
     {/* -------- ABOUT THE DEPARTMENT -------- */}

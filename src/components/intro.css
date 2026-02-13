@@ -30,19 +30,19 @@
   margin-bottom: 40px;
 }
 
+/* TEXT */
 .intro-text {
-  flex: 1 1 0;
+  flex: 1;
   font-size: 1.13rem;
   color: #444;
   line-height: 1.7;
 }
 
-/* Paragraph spacing */
 .intro-text p {
   margin-bottom: 14px;
 }
 
-/* ✅ THEMES LIST – SAME LOOK & FEEL */
+/* THEMES LIST */
 .theme-list {
   margin: 10px 0 18px 20px;
   padding-left: 10px;
@@ -56,7 +56,15 @@
   line-height: 1.7;
 }
 
-/* Images */
+/* IMAGE COLUMN (NEW – IMPORTANT) */
+.intro-image-column {
+  display: flex;
+  flex-direction: column;   
+  gap: 20px;                
+  align-items: center;
+}
+
+/* IMAGES */
 .intro-img {
   max-width: 375px;
   width: 100%;
@@ -64,7 +72,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(150, 120, 20, 0.09);
   object-fit: cover;
-  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .intro-img:hover {
@@ -82,11 +90,15 @@
   text-align: right;
 }
 
-/* Responsive */
+/*  Responsive */
 @media (max-width: 900px) {
   .intro-row {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .intro-image-column {
+    width: 100%;
   }
 
   .intro-img {
