@@ -17,7 +17,7 @@ export default function Title() {
       <div className="title-contact">
         <span className="title-contact-person">Dr. Shrawan Mishra</span><br />
         <span className="title-contact-phone">+91-9129113336</span><br />
-        <a href="mailto:tqm2026.events@itbhu.ac.in">tqm2026.events@itbhu.ac.in</a>
+        <span className="title-contact-email">Email: <a href="mailto:tqm2026.events@itbhu.ac.in">tqm2026.events@itbhu.ac.in</a></span>
       </div>
       <a
         className="title-brochure-btn"

@@ -76,6 +76,21 @@
   color: #000;
 }
 
+.title-contact-email {
+  font-size: 1rem;
+  color: #030114;
+}
+
+.title-contact-email a {
+  text-decoration: none;
+  color: hsl(216, 100%, 2%);
+  transition: color 0.15s ease;
+}
+
+.title-contact-email a:hover {
+  color: #0b57d0;
+}
+
 .title-brochure-btn {
   display: inline-block;
   padding: 15px 45px;
