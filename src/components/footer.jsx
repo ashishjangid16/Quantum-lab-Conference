@@ -26,8 +26,8 @@ const Footer = () => {
         </div>
         <div className="footer-item">
           <span className="footer-icon">📧</span>
-          <a href="mailto:jii2025.events@itbhu.ac.in" className="footer-mail">
-            jii2025.events@itbhu.ac.in
+          <a href="mailto:tqm2026.events@itbhu.ac.in" className="footer-mail">
+             tqm2026.events@itbhu.ac.in
           </a>
         </div>
       </div>

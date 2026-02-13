@@ -1,6 +1,6 @@
 import React from "react";
 import "./registration.css";
-//import qrcode from "../assets/qrcode.png";
+import qrcode from "../assets/qrcode.png";
 
 const BankDetails = () => {
   return (
@@ -70,17 +70,16 @@ const Registration = () => {
           </a>
 
         
-          {/* <img
+          { <img
             src={qrcode}
             alt="QR Code for Registration"
             className="qr-code"
-          /> */}
+          />}
 
           <ul className="registration-list">
             <li>Register online by 10/03/2026</li>
             <li>Selections are based on research relevance</li>
             <li>Shortlisted candidates will be notified by 15/03/2026</li>
-            <li>Selected participants must pay the fee by 08/03/2026</li>
             <li>Seats are limited (only 75 participants)</li>
 
             <strong>Workshop fees:</strong>
