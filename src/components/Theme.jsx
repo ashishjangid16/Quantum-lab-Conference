@@ -11,9 +11,9 @@ export default function Theme() {
       <div className="theme-content">
         <div className="theme-card">
           <ul className="theme-list">
-            <li>To explore recent breakthroughs in quantum materials.</li>
-            <li>To discuss sensor innovations for environmental monitoring, biomedical applications, and smart systems. </li>
-            <li>To promote Indo-Japan academic and industrial collaborations in emergent materials research.</li>
+            <li>Recent breakthroughs in quantum materials</li>
+            <li>Quantum Sensing & Devices</li>
+            <li>Indo-Japan academic and industrial collaborations</li>
           </ul>
         </div>
       </div>

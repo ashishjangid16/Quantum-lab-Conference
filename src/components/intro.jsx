@@ -1,6 +1,7 @@
 import React from "react";
 import "./intro.css";
-import sensorImage from "../assets/sensor.png";
+import sensorImage from "../assets/sensor1.png";
+//import sensorImage2 from "../assets/sensor2.png";
 import smstImage from "../assets/SMST-IMAGE.png";
 
 const TextComponent = () => (
@@ -14,9 +15,10 @@ const TextComponent = () => (
         <div className="intro-text left-align">
 
           <p>
-            This Indo-Japan workshop brings together leading researchers,
-            scientists, and industry experts from India and Japan to discuss
-            cutting-edge developments in emergent quantum materials.
+            This Indo-Japan workshop brings together leading researchers, scientists, and industry experts from India
+and Japan to discuss cutting-edge developments in emergent quantum materials. This workshop will offer
+an opportunity to emphasise the research tradition and the trends of adapting the research fundamentals in
+today’s world. 
           </p>
 
           <p>
@@ -25,17 +27,14 @@ const TextComponent = () => (
             today’s world.
           </p>
 
-          <p><strong>Major themes of the conference include:</strong></p>
+          <p><strong>Major themes of the workshop include:</strong></p>
 
           <ul className="theme-list">
-            <li>Electronic materials for sensors</li>
-            <li>Neuromorphic devices</li>
-            <li>Electrical and photonic materials and devices</li>
-            <li>Magnetic, spintronics and superconducting materials</li>
-            <li>Materials for energy and environment</li>
-            <li>Ion–matter interactions and their applications</li>
-            <li>Structured materials and alloys</li>
             <li>Quantum materials and applications</li>
+            <li>Materials for sensors & quantum devices</li>
+            <li>Quantum Technology</li>
+            <li>Magnetism and Sprintronics</li>
+            <li>Superconducting Materials</li>
           </ul>
 
           <p>
@@ -51,6 +50,7 @@ const TextComponent = () => (
           className="intro-img"
         />
       </div>
+      
     </div>
 
     {/* -------- ABOUT THE DEPARTMENT -------- */}

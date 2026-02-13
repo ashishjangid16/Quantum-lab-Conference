@@ -87,7 +87,7 @@ const Registration = () => {
             <li>₹500 (PhD scholars & Master’s students)</li>
             <li>
               Accommodation will be provided on payment basis
-              (booking deadline: 01/03/2026)
+              (booking deadline: 05/03/2026)
             </li>
           </ul>
         </div>

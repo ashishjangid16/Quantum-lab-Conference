@@ -53,7 +53,7 @@ const Accommodation = () => {
           <p>
             For any queries regarding accommodation arrangements, please contact:
             <br />
-            <strong>Email:</strong> jii2025.events@itbhu.ac.in <br />
+            <strong>Email:</strong> tqm2026.events@itbhu.ac.in<br />
             <strong>Phone:</strong> +91-9129113336
           </p>
         </div>
