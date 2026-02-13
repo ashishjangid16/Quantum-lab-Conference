@@ -1,6 +1,6 @@
 import React from "react";
 import "./registration.css";
-import qrcode from "../assets/qrcode.png";
+//import qrcode from "../assets/qrcode.png";
 
 const BankDetails = () => {
   return (
@@ -62,19 +62,19 @@ const Registration = () => {
 
           <a
             className="registration-link"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeHD3Wh7mGNw06L6n3n0auCHIE9-MdDRUMQVDwZK3Oa3hsy2Q/viewform"
+            href="https://forms.gle/i2idp9FtgwQTKEXp8"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://docs.google.com/forms/d/1vgSVLZKzLkce49mNdntoek0VRFdWNzXO7h9J5pPgC-w
+            https://forms.gle/i2idp9FtgwQTKEXp8
           </a>
 
         
-          <img
+          {/* <img
             src={qrcode}
             alt="QR Code for Registration"
             className="qr-code"
-          />
+          /> */}
 
           <ul className="registration-list">
             <li>Register online by 10/03/2026</li>
