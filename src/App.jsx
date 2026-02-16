@@ -12,7 +12,6 @@ import Speakers from "./components/speakers";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
 import Contact from "./components/Contact";
-// import Program from "./assets/Program.pdf";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -28,7 +27,6 @@ function App() {
     return (
       <>
         <Logo />
-
         <div className={`top-nav ${menuOpen ? "open" : ""}`}>
           <div
             className="menu-toggle"
@@ -195,19 +193,10 @@ function App() {
 
             <Title />
 
-            {/* Program PDF Button */}
-            {/* <div className="program-btn-wrapper">
-              <a
-                href={Program}
-                className="program-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Program Details
-              </a>
-            </div> */}
-
             <Textbox />
+            
+            {/* Sponsorship only on HOME */}
+            <SponsorshipSection />
           </>
         );
     }
@@ -218,7 +207,6 @@ function App() {
       <Nav />
       <div className="content-container">
         {renderSection()}
-        <SponsorshipSection />
         <Footer />
       </div>
     </div>
