@@ -21,7 +21,7 @@ const Contact = () => {
             <strong>Dr. Shrawan Mishra</strong> <br />
             Department of Materials Science and Technology <br />
             Indian Institute of Technology (BHU), Varanasi <br />
-            <strong>Email:</strong> shrawan.mst@iitbhu.ac.in <br />
+            <strong>Email:</strong> <a href="mailto:tqm2026.events@itbhu.ac.in">tqm2026.events@itbhu.ac.in</a> <br />
             <strong>Phone:</strong> +91-9129113336
           </p>
 
@@ -36,7 +36,7 @@ const Contact = () => {
           <p className="contact-info">
             <strong>Shubham Kumar Gupta</strong> <br />
             Department of Materials Science and Technology <br />
-            <strong>Email:</strong> shubhamkumargupta.rs.mst24@itbhu.ac.in <br />
+            <strong>Email:</strong> <a href="mailto:shubhamkumargupta.rs.mst24@itbhu.ac.in">shubhamkumargupta.rs.mst24@itbhu.ac.in</a> <br />
             <strong>Phone:</strong> +91-8318434197
           </p>
 
