@@ -195,7 +195,7 @@ function App() {
 
             <Textbox />
             
-            {/* Sponsorship only on HOME */}
+         
             <SponsorshipSection />
           </>
         );
