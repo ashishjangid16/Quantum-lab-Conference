@@ -80,6 +80,49 @@ function App() {
     );
   };
 
+  const SponsorshipSection = () => (
+    <div className="sponsorship-section">
+      <h2 style={{ marginBottom: '30px', color: '#222', fontSize: '2.2rem' }}>
+        Sponsorship Categories
+      </h2>
+      
+      <div className="sponsorship-categories">
+        <div className="sponsor-tier platinum">
+          <div className="tier-header">
+            🟩 <span>Platinum (₹75,000)</span>
+          </div>
+          <ul>
+            <li>Prominent logo display on all materials</li>
+            <li>Exhibition stall</li>
+            <li>Acknowledgement during sessions</li>
+            <li>Provision of refreshments & meals for all participants</li>
+          </ul>
+        </div>
+
+        <div className="sponsor-tier gold">
+          <div className="tier-header">
+            🟨 <span>Gold (₹50,000)</span>
+          </div>
+          <ul>
+            <li>Logo on brochure and banner</li>
+            <li>Stall space</li>
+            <li>Shared acknowledgement in sessions</li>
+          </ul>
+        </div>
+
+        <div className="sponsor-tier silver">
+          <div className="tier-header">
+            🟦 <span>Silver (₹25,000)</span>
+          </div>
+          <ul>
+            <li>Logo on event website and program booklet</li>
+            <li>Inclusion in sponsor acknowledgements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+
   const renderSection = () => {
     switch (activeSection) {
       case "theme":
@@ -175,6 +218,7 @@ function App() {
       <Nav />
       <div className="content-container">
         {renderSection()}
+        <SponsorshipSection />
         <Footer />
       </div>
     </div>
