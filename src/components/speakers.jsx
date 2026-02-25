@@ -9,18 +9,18 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 1.png"),
     link: "https://www.saha.ac.in/web/scientific/personal-page?mid=duttagupta.samik&tab=tab1",
   },
-  // {
-  //   name: "Dr. Soumya Ranjan Rath",
-  //   institute: "NIMS, Japan",
-  //   imageSrc: require("../assets/speaker/speaker 2.png"),
-  //   link: "https://www.inrim.it/en",
-  // },
-  // {
-  //   name: "Dr. Vittorio Basso",
-  //   institute: "INRiM",
-  //   imageSrc: require("../assets/speaker/speaker 3.png"),
-  //   link: "https://www.inrim.it/en",
-  // },
+  {
+    name: "Dr. Shinji ISOGAMI",
+    institute: "NIMS, JAPAN",
+    imageSrc: require("../assets/speaker/speaker 2.png"),
+    link: "https://www.nims.go.jp/mmu/people/Isogami.html",
+  },
+  {
+    name: "Dr. Manoj Mishra",
+    institute: "Computer Science, Rajiv Gandhi South Campus (BHU)",
+    imageSrc: require("../assets/speaker/speaker 3.png"),
+    link: "https://www.bhu.ac.in/site/FacultyProfile/2_8?FA001500",
+  },
   // {
   //   name: "Dr. Thirupathaiah Setti",
   //   institute: "S. N. Bose National Centre for Basic Sciences",
