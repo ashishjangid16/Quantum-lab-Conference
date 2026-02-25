@@ -4,16 +4,16 @@ import ImageDisplay from "./speaker_image";
 
 const speakers = [
   {
-    name: "Dr. Samik DuttaGupta",
-    institute: "Saha Institute of Nuclear Physics (SINP)",
-    imageSrc: require("../assets/speaker/speaker 1.png"),
-    link: "https://www.saha.ac.in/web/scientific/personal-page?mid=duttagupta.samik&tab=tab1",
-  },
-  {
     name: "Dr. Shinji ISOGAMI",
     institute: "NIMS, JAPAN",
     imageSrc: require("../assets/speaker/speaker 2.png"),
     link: "https://www.nims.go.jp/mmu/people/Isogami.html",
+  },
+  {
+    name: "Dr. Samik DuttaGupta",
+    institute: "Saha Institute of Nuclear Physics (SINP)",
+    imageSrc: require("../assets/speaker/speaker 1.png"),
+    link: "https://www.saha.ac.in/web/scientific/personal-page?mid=duttagupta.samik&tab=tab1",
   },
   {
     name: "Dr. Manoj Mishra",
