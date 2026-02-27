@@ -21,24 +21,24 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 3.png"),
     link: "https://www.bhu.ac.in/site/FacultyProfile/2_8?FA001500",
   },
-  // {
-  //   name: "Dr. Thirupathaiah Setti",
-  //   institute: "S. N. Bose National Centre for Basic Sciences",
-  //   imageSrc: require("../assets/speaker/speaker 4.png"),
-  //   link: "https://bose.res.in/faculty/fac_new/setti.html.20190514",
-  // },
-  // {
-  //   name: "Dr. Rohit Medwal",
-  //   institute: "IIT Kanpur",
-  //   imageSrc: require("../assets/speaker/speaker 5.png"),
-  //   link: "https://www.iitk.ac.in/new/rohit-medwal",
-  // },
-  // {
-  //   name: "Dr. Jyoti Ranjan Mohanty",
-  //   institute: "IIT Hyderabad",
-  //   imageSrc: require("../assets/speaker/speaker 6.png"),
-  //   link: "https://people.iith.ac.in/jmohanty/",
-  // },
+  {
+    name: "Prof. Ashim Pramanik",
+    institute: "Jawaharlal Nehru University (JNU)",
+    imageSrc: require("../assets/speaker/speaker 4.png"),
+    link: "https://www.jnu.ac.in/content/akpramanik",
+  },
+  {
+    name: "Dr. GVS Murthy ",
+    institute: " CSIR-National Metallurgical Laboratory, Jamshedpur (Retd.)",
+    imageSrc: require("../assets/speaker/speaker 5.png"),
+    link: "https://www.researchgate.net/profile/G-Murthy-5",
+  },
+  {
+    name: " Dr. Satyaprakash Sahoo",
+    institute: " Institute of Physics, Bhubaneswar",
+    imageSrc: require("../assets/speaker/speaker 6.png"),
+    link: "https://www.iopb.res.in/members/sahoo",
+  },
   // {
   //   name: "Dr. Ritwik Mondal",
   //   institute: " IIT (ISM) Dhanbad",
