@@ -10,14 +10,14 @@ export default function Title() {
         <span className="title-bold">TRENDS IN QUANTUM MATERIALS</span>
       </div>
       <div className="title-details">
-        <span className="title-date">24 March, 2026 | Dev & Vardhana Goswami Lecture Hall Complex</span><br />
+        <span className="title-date"> <strong> 24 March, 2026 | Dev & Vardhana Goswami Lecture Hall Complex</strong> </span><br />
         <span className="title-institute"><strong>School of Materials Science and Technology</strong></span><br />
         <span className="title-institute"><strong>Indian Institute of Technology (BHU), Varanasi</strong></span>
       </div>
       <div className="title-contact">
-        <span className="title-contact-person">Dr. Shrawan Mishra</span><br />
-        <span className="title-contact-phone">+91-9129113336</span><br />
-        <span className="title-contact-email">Email: <a href="mailto:tqm2026.events@itbhu.ac.in">tqm2026.events@itbhu.ac.in</a></span>
+        <span className="title-contact-person"><strong>Dr. Shrawan Mishra</strong></span><br />
+        <span className="title-contact-phone"><strong>+91-9129113336</strong></span><br />
+        <span className="title-contact-email"><strong>Email: <a href="mailto:tqm2026.events@itbhu.ac.in">tqm2026.events@itbhu.ac.in</a></strong></span>
       </div>
       <a
         className="title-brochure-btn"
