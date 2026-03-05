@@ -39,12 +39,12 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 6.png"),
     link: "https://www.iopb.res.in/members/sahoo",
   },
-  // {
-  //   name: "Dr. Ritwik Mondal",
-  //   institute: " IIT (ISM) Dhanbad",
-  //   imageSrc: require("../assets/speaker/speaker 7.png"),
-  //   link: "https://sites.google.com/view/ritwik-utsg/about-pi",
-  // },
+  {
+    name: "Dr. Binoy Krishna Hazra",
+    institute: " IIT Guwahati",
+    imageSrc: require("../assets/speaker/speaker 7.png"),
+    link: "https://www.iitg.ac.in/phy/fac_hompage.php?email=bkhazra@iitg.ac.in",
+  },
   // {
   //   name: "Dr. Vijay Raj Singh",
   //   institute: "Central University of South Bihar",
