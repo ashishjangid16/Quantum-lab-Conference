@@ -45,12 +45,12 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 7.png"),
     link: "https://www.iitg.ac.in/phy/fac_hompage.php?email=bkhazra@iitg.ac.in",
   },
-  // {
-  //   name: "Dr. Vijay Raj Singh",
-  //   institute: "Central University of South Bihar",
-  //   imageSrc: require("../assets/speaker/speaker 8.png"),
-  //   link: "https://cusb.irins.org/profile/109198",
-  // },
+  {
+    name: "Prof. Amit Kumar Agarwal",
+    institute: "IIT Kanpur",
+    imageSrc: require("../assets/speaker/speaker 8.png"),
+    link: "https://www.iitk.ac.in/dr-amit-kumar-agarwal",
+  },
   // {
   //   name: "Dr. Shivam Verma",
   //   institute: "IIT BHU",
