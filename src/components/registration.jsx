@@ -77,9 +77,9 @@ const Registration = () => {
           />}
 
           <ul className="registration-list">
-            <li>Register online by 10/03/2026</li>
+            <li>Register online by 20/03/2026</li>
             <li>Selections are based on research relevance</li>
-            <li>Shortlisted candidates will be notified by 15/03/2026</li>
+            <li>Shortlisted candidates will be notified by 20/03/2026</li>
             <li>Seats are limited (only 75 participants)</li>
 
             <strong>Workshop fees:</strong>
@@ -87,7 +87,7 @@ const Registration = () => {
             <li>₹500 (PhD scholars & Master’s students)</li>
             <li>
               Accommodation will be provided on payment basis
-              (booking deadline: 05/03/2026)
+              (booking deadline: 20/03/2026)
             </li>
           </ul>
         </div>
