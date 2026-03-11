@@ -6,6 +6,7 @@ import Theme from "./components/Theme";
 import Logo from "./components/Logo";
 import "./App.css";
 import Title from "./components/Title";
+import GangaAd from "./components/GangaAd";
 import IIT_BHU from "./assets/IIT-BHU.png";
 import IIT_BHU_2 from "./assets/IIT-BHU 2.jpg";
 import Speakers from "./components/speakers";
@@ -193,9 +194,10 @@ function App() {
 
             <Title />
 
+            <GangaAd />
+
             <Textbox />
-            
-         
+
             <SponsorshipSection />
           </>
         );
