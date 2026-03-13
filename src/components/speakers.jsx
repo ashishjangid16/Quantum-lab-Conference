@@ -51,12 +51,12 @@ const speakers = [
     imageSrc: require("../assets/speaker/speaker 8.png"),
     link: "https://www.iitk.ac.in/dr-amit-kumar-agarwal",
   },
-  // {
-  //   name: "Dr. Shivam Verma",
-  //   institute: "IIT BHU",
-  //   imageSrc: require("../assets/speaker/speaker 9.png"),
-  //   link: "https://www.iitbhu.ac.in/dept/ece/people/shivamece",
-  // },
+  {
+    name: "Prof. Chandrasekhar Murapaka",
+    institute: "IIT Hyderabad",
+    imageSrc: require("../assets/speaker/speaker 9.png"),
+    link: "https://iith.ac.in/msme/mchandrasekhar/",
+  },
   // {
   //   name: "Dr. Biswanath Bhoi",
   //   institute: "IIT BHU",
