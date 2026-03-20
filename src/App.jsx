@@ -9,6 +9,8 @@ import Title from "./components/Title";
 import GangaAd from "./components/GangaAd";
 import IIT_BHU from "./assets/IIT-BHU.png";
 import IIT_BHU_2 from "./assets/IIT-BHU 2.jpg";
+import sponsor1Img from "./assets/sponser 1.jpeg";
+import sponsor2Img from "./assets/sponser 2.jpeg";
 import Speakers from "./components/speakers";
 import Footer from "./components/footer";
 import Accommodation from "./components/accommodation";
@@ -117,6 +119,19 @@ function App() {
             <li>Logo on event website and program booklet</li>
             <li>Inclusion in sponsor acknowledgements</li>
           </ul>
+        </div>
+      </div>
+
+      <div className="sponsor-list" style={{ marginTop: '24px', textAlign: 'left', maxWidth: '680px', marginInline: 'auto' }}>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div style={{ background: '#f3f7ff', borderRadius: '10px', padding: '12px 14px', flex: '1 1 240px', minWidth: '220px', textAlign: 'center' }}>
+            <img src={sponsor1Img} alt="IR TECH logo" style={{ width: '100%', maxHeight: '120px', objectFit: 'contain', borderRadius: '8px' }} />
+            <strong style={{ display: 'block', marginTop: '8px' }}>IR TECH</strong>
+          </div>
+          <div style={{ background: '#fff8e4', borderRadius: '10px', padding: '12px 14px', flex: '1 1 240px', minWidth: '220px', textAlign: 'center' }}>
+            <img src={sponsor2Img} alt="CSIR logo" style={{ width: '100%', maxHeight: '120px', objectFit: 'contain', borderRadius: '8px' }} />
+            <strong style={{ display: 'block', marginTop: '8px' }}>CSIR</strong>
+          </div>
         </div>
       </div>
     </div>
