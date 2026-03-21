@@ -112,6 +112,28 @@
   color: #232529;
 }
 
+.title-agenda-btn {
+  display: inline-block;
+  padding: 15px 45px;
+  margin-top: 24px;
+  margin-left: 12px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #000;
+  background: #e6e261;
+  border: none;
+  border-radius: 32px / 48px;
+  box-shadow: 0 4px 30px rgba(180, 172, 60, 0.13);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.title-agenda-btn:hover {
+  background: #f0e26d;
+  color: #232529;
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .title-container {
@@ -127,5 +149,6 @@
   .title-date { font-size: 0.95rem; }
   .title-institute { font-size: 1rem; }
   .title-brochure-btn { padding: 10px 18vw; font-size: 1rem; }
+  .title-agenda-btn { padding: 10px 18vw; font-size: 1rem; margin-top: 12px; margin-left: 0; }
   .IMAGE-img { max-width: 100%; }
 }

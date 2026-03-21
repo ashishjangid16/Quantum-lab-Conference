@@ -1,5 +1,6 @@
 import "./Title.css";
 import brochurePdf from "../assets/Conference.pdf";
+import agendaPdf from "../assets/Agenda_workshop.pdf";
 
 export default function Title() {
   return (
@@ -26,6 +27,14 @@ export default function Title() {
         rel="noopener noreferrer"
       >
         Download Workshop Brochure
+      </a>
+      <a
+        className="title-agenda-btn"
+        href={agendaPdf}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Workshop Agenda
       </a>
     </div>
   );
